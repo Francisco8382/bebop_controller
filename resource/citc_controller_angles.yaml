@@ -1,0 +1,27 @@
+# Proportional derivative controller parameters
+Gains: {K1x: 0.9, 
+        K1y: 0.9, 
+        K1z: 5.0, 
+        K1yaw: 0.3,
+        K2x: 1.2, 
+        K2y: 1.2, 
+        K2z: 3.0, 
+        K2yaw: 2.4,
+        K3x: 0,
+        K3y: 0,
+        K3z: 0,
+        K3yaw: 0,
+        K4x: 0,
+        K4y: 0,
+        K4z: 0,
+        K4yaw: 0}
+Reference_Gains: {X: 0,
+                  Y: 0,
+                  Z: 0,
+                  Yaw: 0}
+Lambda: {X: 1.3151,
+         Y: 1.3151,
+         Z: 4.6697}
+Mass: 0.5
+Sigma: 0.8
+Disable_Commands: False

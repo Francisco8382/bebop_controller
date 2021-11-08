@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/francisco/bebop_controller/devel/include/**",
+                "/opt/ros/kinetic/include/**",
+                "/home/francisco/catkin_ws/devel/include/**",
+                "/home/francisco/bebop_controller/src/bebop_controller/include/**",
+                "/home/francisco/catkin_ws/src/bebop_autonomy/bebop_driver/include/**",
+                "/home/francisco/catkin_ws/src/BebopS/include/**",
+                "/home/francisco/bebop_controller/src/mav_comm/mav_msgs/include/**",
+                "/home/francisco/bebop_controller/src/mav_comm/planning_msgs/include/**",
+                "/home/francisco/catkin_ws/src/rotors_simulator/rotors_control/include/**",
+                "/home/francisco/catkin_ws/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+                "/home/francisco/catkin_ws/src/rotors_simulator/rotors_joy_interface/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/include"
+            ],
+            "name": "ROS"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,4 @@
+Waypoint: { TimeBeforeTrajectory: 20,
+            TrajectoryTime: 60, 
+            MarginTime: 20, 
+            DiffTime: 0.01}

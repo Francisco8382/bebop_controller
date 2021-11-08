@@ -1,0 +1,26 @@
+# Proportional integral derivative controller parameters
+Gains: {Px: 1.8, 
+        Py: 1.8, 
+        Pz: 5.0, 
+        Pyaw: 4.8,
+        Dx: 1.4, 
+        Dy: 1.4, 
+        Dz: 7.2, 
+        Dyaw: 0.6,
+        Ix: 0.3,
+        Iy: 0.3,
+        Iz: 1.0,
+        Iyaw: 1.0}
+Limits: {Ix: 3.0,
+         Iy: 3.0,
+         Iz: 1.0,
+         Iyaw: 10.0}
+Reference_Gains: {X: 1.0,
+                  Y: 1.0,
+                  Z: 1.0,
+                  Yaw: 1.0}
+Lambda: {X: 1.3151,
+         Y: 1.3151,
+         Z: 4.6697}
+Mass: 0.5
+Disable_Commands: False

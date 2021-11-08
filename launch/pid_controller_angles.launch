@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="Dir" default="$(env HOME)/CSV/"/>
+    <param name="Subfolder" type="str" command="date +'%d-%m-%Y_%Ih%Mm%Ss'"/>
+    <arg name="GazeboRealTime" default="0.5"/>
+    <arg name="YAML" default="pid_controller_angles.yaml"/>
+
+    <node name="gazebo" pkg="bebop_controller" type="gazebo.py" output="screen">
+      <param name="Topic" type="str" value="/bebop/pose"/>
+      <param name="GazeboRealTime" type="double" value="$(arg GazeboRealTime)"/>
+    </node>
+
+    <node name="pid_controller_angles" pkg="bebop_controller" type="pid_controller_angles" output="screen"> 
+      <rosparam command="load" file="$(find bebop_controller)/resource/pid_controller_angles.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/topics.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/normalize_angles.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/safe_zone.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/max_speed.yaml" />
+    </node>
+
+    <node name="waypoint" pkg="bebop_controller" type="sinusoidal" output="screen"> 
+      <rosparam command="load" file="$(find bebop_controller)/resource/topics.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/waypoint.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/trajectory.yaml" />
+    </node>
+
+    <node name="data_to_csv" pkg="bebop_controller" type="data_to_csv" output="screen"> 
+      <rosparam command="load" file="$(find bebop_controller)/resource/topics.yaml" />
+      <rosparam command="load" file="$(find bebop_controller)/resource/waypoint.yaml" />
+      <param name="Dir" type="str" value="$(arg Dir)"/>
+    </node>
+
+    <node name="plot" pkg="bebop_controller" type="plot.py" output="screen"> 
+      <rosparam command="load" file="$(find bebop_controller)/resource/topics.yaml" />
+      <param name="Dir" type="str" value="$(arg Dir)"/>
+      <param name="YAML" type="str" value="$(arg YAML)"/>
+    </node>
+
+</launch>

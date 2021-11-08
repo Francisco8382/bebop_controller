@@ -1,0 +1,8 @@
+# Topics
+Topics: { Command_Trajectory: "/bebop/command/trajectory",
+          Pose: "/bebop/pose",
+          CMD_Vel: "/bebop/cmd_vel",
+          TakeOff: "/bebop/takeoff",
+          Land: "/bebop/land",
+          CSV_Begin: "/csv/begin", 
+          CSV_End: "/csv/end"}

@@ -1,0 +1,10 @@
+# Proportional controller parameters
+Gains: {Px: 1.2, 
+        Py: 1.2, 
+        Pz: 1.0, 
+        Pyaw: 1.0}
+Reference_Gains: {X: 1.0,
+                  Y: 1.0,
+                  Z: 1.0,
+                  Yaw: 1.0}
+Disable_Commands: False

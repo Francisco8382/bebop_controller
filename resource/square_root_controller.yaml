@@ -1,0 +1,10 @@
+# Square root controller parameters
+Gains: {Px: 1000.0, 
+        Py: 1000.0, 
+        Pz: 5.0, 
+        Pyaw: 3.0}
+Reference_Gains: {X: 1.0,
+                  Y: 1.0,
+                  Z: 1.0,
+                  Yaw: 1.0}
+Disable_Commands: False
