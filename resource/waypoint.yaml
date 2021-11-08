@@ -1,4 +1,4 @@
 Waypoint: { TimeBeforeTrajectory: 20,
             TrajectoryTime: 60, 
-            MarginTime: 20, 
+            MarginTime: 10, 
             DiffTime: 0.01}

@@ -67,12 +67,12 @@ class SphinxPublisher:
         pose.header.seq = self.cont
         pose.header.stamp = rospy.Time.now()
         pose.header.frame_id = "bebop2"
-        pose.pose.position.x = self.pos[0]
-        pose.pose.position.y = self.pos[1]
-        pose.pose.position.z = self.pos[2]
-        pose.pose.orientation.x = qx
-        pose.pose.orientation.y = qy
-        pose.pose.orientation.z = qz
+        pose.pose.position.x = self.pos[1]
+        pose.pose.position.y = self.pos[2]
+        pose.pose.position.z = self.pos[0]
+        pose.pose.orientation.x = qy
+        pose.pose.orientation.y = qz
+        pose.pose.orientation.z = qx
         pose.pose.orientation.w = qw
         self.cont += 1
         self.odom_pub.publish(pose)

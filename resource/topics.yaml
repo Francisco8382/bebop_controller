@@ -1,6 +1,6 @@
 # Topics
 Topics: { Command_Trajectory: "/bebop/command/trajectory",
-          Pose: "/bebop/pose",
+          Pose: "/vrpn_client_node/RigidBody1/pose",
           CMD_Vel: "/bebop/cmd_vel",
           TakeOff: "/bebop/takeoff",
           Land: "/bebop/land",

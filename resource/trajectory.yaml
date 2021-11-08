@@ -2,7 +2,7 @@ Trajectory: { X_Initial: 0,
               Y_Initial: 0,
               Z_Initial: 1.4,
               X_Distance: 0.8,
-              Y_Distance: 0.6,
-              Z_Distance: 0.4}
+              Y_Distance: 0.4,
+              Z_Distance: 0.15}
 Yaw_Enabled: False
 Yaw_Offset: 1.57

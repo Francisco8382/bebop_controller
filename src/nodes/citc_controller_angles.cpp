@@ -7,6 +7,7 @@ namespace bebop_controller {
         int_zeta.x = int_zeta.y = int_zeta.z = int_zeta.yaw = 0;
         int_eta.x = int_eta.y = int_eta.z = int_eta.yaw = 0;
         last_dot_e.x = last_dot_e.y = last_dot_e.z = last_dot_e.yaw = 0;
+        u_z = 0;
         GetRosParameter(pnh, "Gains/K1x", K1xDefaultValue, &K1.x);
         GetRosParameter(pnh, "Gains/K1y", K1yDefaultValue, &K1.y);
         GetRosParameter(pnh, "Gains/K1z", K1zDefaultValue, &K1.z);
@@ -73,11 +74,12 @@ namespace bebop_controller {
                     mass*(lambda.z-std::abs(command_trajectory_.acceleration_W[2])));
         a.yaw = v_nom.yaw + v_stc.yaw;
 
-        double u_Terr, phi_r, theta_r, psi_r;
+        double u_Terr, u_T, phi_r, theta_r, psi;
         u_Terr = a.z + mass*GRAVITY;
-        psi_r = command_trajectory_.getYaw();
-        theta_r = atan(((a.x * cos(psi_r)) + (a.y * sin(psi_r)))/u_Terr);
-        phi_r = atan(cos(theta_r)*(((a.x * sin(psi_r)) - (a.y * cos(psi_r)))/(u_Terr)));
+        u_T = sqrt(pow(a.x,2) + pow(a.y,2) + pow(u_Terr,2));
+        psi = state.orientation.z;
+        theta_r = atan(((a.x * cos(psi)) + (a.y * sin(psi)))/u_Terr);
+        phi_r = atan(cos(theta_r)*(((a.x * sin(psi)) - (a.y * cos(psi)))/(u_Terr)));
 
         u_z = clamp(u_z + diff*a.z,max_speed.z*norm.vertical);
 

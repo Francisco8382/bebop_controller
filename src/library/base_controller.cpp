@@ -143,9 +143,9 @@ namespace bebop_controller {
     void BaseController::SetOdometry(mav_msgs::EigenOdometry& odometry) {
         odometry_ = odometry; 
         controller_active_= true;
-        state.position.x = odometry_.position_W[0];
-        state.position.y = odometry_.position_W[1];
-        state.position.z = odometry_.position_W[2];
+        state.position.x = odometry_.position_W[2];
+        state.position.y = odometry_.position_W[0];
+        state.position.z = odometry_.position_W[1];
         Quaternion2Euler(state.orientation.x, state.orientation.y, state.orientation.z);
     }
 
@@ -172,8 +172,8 @@ namespace bebop_controller {
     }
 
     void BaseController::Quaternion2Euler(double& roll, double& pitch, double& yaw) const {
-        tf::Quaternion q(odometry_.orientation_W_B.x(), odometry_.orientation_W_B.y(), 
-                        odometry_.orientation_W_B.z(), odometry_.orientation_W_B.w());
+        tf::Quaternion q(odometry_.orientation_W_B.z(), odometry_.orientation_W_B.x(), 
+                        odometry_.orientation_W_B.y(), odometry_.orientation_W_B.w());
         tf::Matrix3x3 m(q);
         m.getRPY(roll, pitch, yaw);
     }

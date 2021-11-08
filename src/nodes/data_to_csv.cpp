@@ -37,11 +37,13 @@ namespace bebop_controller {
     }
 
     void DataToCSV::Odometry_CB(const geometry_msgs::PoseStamped& pose_msg) {
-        Eigen::Vector4d q = vector4FromQuaternionMsg(pose_msg.pose.orientation);
+        Eigen::Vector4d q = Eigen::Vector4d(pose_msg.pose.orientation.z, pose_msg.pose.orientation.x, 
+                                            pose_msg.pose.orientation.y, pose_msg.pose.orientation.w);
+        //Eigen::Vector4d q = vector4FromQuaternionMsg(pose_msg.pose.orientation);
         Eigen::Vector3d rpy = Quat2RPY(q);
-        drone_pose.position.x = pose_msg.pose.position.x;
-        drone_pose.position.y = pose_msg.pose.position.y;
-        drone_pose.position.z = pose_msg.pose.position.z;
+        drone_pose.position.x = pose_msg.pose.position.z;
+        drone_pose.position.y = pose_msg.pose.position.x;
+        drone_pose.position.z = pose_msg.pose.position.y;
         drone_pose.orientation.z = rpy.z();
     }
 
