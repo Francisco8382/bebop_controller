@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="server" default="10.200.29.14"/>
+    <node pkg="vrpn_client_ros" type="vrpn_client_node" name="vrpn_client_node" output="screen">
+        <rosparam subst_value="true">
+            server: $(arg server)
+            port: 3883
+            frame_id: world
+            broadcast_tf: true
+            refresh_tracker_frequency: 120.0
+        </rosparam>
+    </node>
+</launch>
