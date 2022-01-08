@@ -1,3 +1,6 @@
+/// @file citc_controller_angles.h
+/// @brief Header file for CITC Controller using reference angles.
+
 #include "bebop_controller/base_controller.h"
 
 #define K1xDefaultValue 1.0
@@ -38,12 +41,14 @@
 
 namespace bebop_controller {
 
+    /// Structure for normalization parameters.
     struct Normalize {
         double angle;
         double vertical;
         double rotation;
     };
 
+    /// CITC controller class.
     class CITCController : public BaseController {
         public:
             CITCController();

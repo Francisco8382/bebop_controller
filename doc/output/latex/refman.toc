@@ -1,0 +1,534 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Bebop Controller Package}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Installation Instructions}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}ROS Nodes}{5}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Launch Files}{7}{chapter.4}%
+\contentsline {chapter}{\numberline {5}YAML Files}{9}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Namespace Index}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Namespace List}{11}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Hierarchical Index}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Class Hierarchy}{13}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Class Index}{15}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Class List}{15}{section.8.1}%
+\contentsline {chapter}{\numberline {9}File Index}{17}{chapter.9}%
+\contentsline {section}{\numberline {9.1}File List}{17}{section.9.1}%
+\contentsline {chapter}{\numberline {10}Namespace Documentation}{19}{chapter.10}%
+\contentsline {section}{\numberline {10.1}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller Namespace Reference}{19}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Detailed Description}{20}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Function Documentation}{20}{subsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.2.1}bound()}{20}{subsubsection.10.1.2.1}%
+\contentsline {subsubsection}{\numberline {10.1.2.2}clamp()}{20}{subsubsection.10.1.2.2}%
+\contentsline {subsubsection}{\numberline {10.1.2.3}GetRosParameter()}{21}{subsubsection.10.1.2.3}%
+\contentsline {subsubsection}{\numberline {10.1.2.4}max()}{21}{subsubsection.10.1.2.4}%
+\contentsline {subsubsection}{\numberline {10.1.2.5}Quat2RPY()}{21}{subsubsection.10.1.2.5}%
+\contentsline {subsubsection}{\numberline {10.1.2.6}RPY2Quat()}{22}{subsubsection.10.1.2.6}%
+\contentsline {subsubsection}{\numberline {10.1.2.7}sgn()}{22}{subsubsection.10.1.2.7}%
+\contentsline {subsubsection}{\numberline {10.1.2.8}yawFromQuaternion()}{22}{subsubsection.10.1.2.8}%
+\contentsline {section}{\numberline {10.2}gazebo Namespace Reference}{23}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Detailed Description}{23}{subsection.10.2.1}%
+\contentsline {section}{\numberline {10.3}plot Namespace Reference}{23}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Detailed Description}{23}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Variable Documentation}{23}{subsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.2.1}path}{23}{subsubsection.10.3.2.1}%
+\contentsline {subsubsection}{\numberline {10.3.2.2}plt}{24}{subsubsection.10.3.2.2}%
+\contentsline {subsubsection}{\numberline {10.3.2.3}sub}{24}{subsubsection.10.3.2.3}%
+\contentsline {subsubsection}{\numberline {10.3.2.4}topic}{24}{subsubsection.10.3.2.4}%
+\contentsline {subsubsection}{\numberline {10.3.2.5}yaml}{24}{subsubsection.10.3.2.5}%
+\contentsline {chapter}{\numberline {11}Class Documentation}{25}{chapter.11}%
+\contentsline {section}{\numberline {11.1}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Class Reference}{25}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Detailed Description}{26}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Constructor \& Destructor Documentation}{26}{subsection.11.1.2}%
+\contentsline {subsubsection}{\numberline {11.1.2.1}BaseController()}{26}{subsubsection.11.1.2.1}%
+\contentsline {subsubsection}{\numberline {11.1.2.2}$\sim $BaseController()}{26}{subsubsection.11.1.2.2}%
+\contentsline {subsection}{\numberline {11.1.3}Member Function Documentation}{27}{subsection.11.1.3}%
+\contentsline {subsubsection}{\numberline {11.1.3.1}CalculateCommandVelocities()}{27}{subsubsection.11.1.3.1}%
+\contentsline {subsubsection}{\numberline {11.1.3.2}CalculateLeashLength()}{27}{subsubsection.11.1.3.2}%
+\contentsline {subsubsection}{\numberline {11.1.3.3}CheckSafeZone()}{27}{subsubsection.11.1.3.3}%
+\contentsline {subsubsection}{\numberline {11.1.3.4}EstimateAcceleration()}{27}{subsubsection.11.1.3.4}%
+\contentsline {subsubsection}{\numberline {11.1.3.5}EstimateVelocity()}{27}{subsubsection.11.1.3.5}%
+\contentsline {subsubsection}{\numberline {11.1.3.6}GetErrors()}{28}{subsubsection.11.1.3.6}%
+\contentsline {subsubsection}{\numberline {11.1.3.7}GetVelocityErrors()}{28}{subsubsection.11.1.3.7}%
+\contentsline {subsubsection}{\numberline {11.1.3.8}Land()}{28}{subsubsection.11.1.3.8}%
+\contentsline {subsubsection}{\numberline {11.1.3.9}LimitPositionErrors()}{28}{subsubsection.11.1.3.9}%
+\contentsline {subsubsection}{\numberline {11.1.3.10}MultiDOFJointTrajectory\_CB()}{28}{subsubsection.11.1.3.10}%
+\contentsline {subsubsection}{\numberline {11.1.3.11}Odometry\_CB()}{28}{subsubsection.11.1.3.11}%
+\contentsline {subsubsection}{\numberline {11.1.3.12}Quaternion2Euler()}{29}{subsubsection.11.1.3.12}%
+\contentsline {subsubsection}{\numberline {11.1.3.13}SetOdometry()}{29}{subsubsection.11.1.3.13}%
+\contentsline {subsubsection}{\numberline {11.1.3.14}SetTrajectoryPoint()}{29}{subsubsection.11.1.3.14}%
+\contentsline {subsubsection}{\numberline {11.1.3.15}Stop()}{29}{subsubsection.11.1.3.15}%
+\contentsline {subsubsection}{\numberline {11.1.3.16}Stop\_CB()}{29}{subsubsection.11.1.3.16}%
+\contentsline {subsubsection}{\numberline {11.1.3.17}TakeOff()}{29}{subsubsection.11.1.3.17}%
+\contentsline {subsubsection}{\numberline {11.1.3.18}TimeOut\_CB()}{30}{subsubsection.11.1.3.18}%
+\contentsline {subsection}{\numberline {11.1.4}Member Data Documentation}{30}{subsection.11.1.4}%
+\contentsline {subsubsection}{\numberline {11.1.4.1}cmd\_multi\_dof\_joint\_trajectory\_sub\_}{30}{subsubsection.11.1.4.1}%
+\contentsline {subsubsection}{\numberline {11.1.4.2}command\_trajectory\_}{30}{subsubsection.11.1.4.2}%
+\contentsline {subsubsection}{\numberline {11.1.4.3}controller\_active\_}{30}{subsubsection.11.1.4.3}%
+\contentsline {subsubsection}{\numberline {11.1.4.4}diff}{30}{subsubsection.11.1.4.4}%
+\contentsline {subsubsection}{\numberline {11.1.4.5}disable\_commands}{30}{subsubsection.11.1.4.5}%
+\contentsline {subsubsection}{\numberline {11.1.4.6}end\_sub\_}{31}{subsubsection.11.1.4.6}%
+\contentsline {subsubsection}{\numberline {11.1.4.7}land\_pub\_}{31}{subsubsection.11.1.4.7}%
+\contentsline {subsubsection}{\numberline {11.1.4.8}last\_state}{31}{subsubsection.11.1.4.8}%
+\contentsline {subsubsection}{\numberline {11.1.4.9}lastTime}{31}{subsubsection.11.1.4.9}%
+\contentsline {subsubsection}{\numberline {11.1.4.10}leash\_length}{31}{subsubsection.11.1.4.10}%
+\contentsline {subsubsection}{\numberline {11.1.4.11}max\_speed}{31}{subsubsection.11.1.4.11}%
+\contentsline {subsubsection}{\numberline {11.1.4.12}motor\_velocity\_reference\_pub\_}{32}{subsubsection.11.1.4.12}%
+\contentsline {subsubsection}{\numberline {11.1.4.13}odom\_sub\_}{32}{subsubsection.11.1.4.13}%
+\contentsline {subsubsection}{\numberline {11.1.4.14}odometry\_}{32}{subsubsection.11.1.4.14}%
+\contentsline {subsubsection}{\numberline {11.1.4.15}odometry\_filtered\_pub\_}{32}{subsubsection.11.1.4.15}%
+\contentsline {subsubsection}{\numberline {11.1.4.16}reference\_angles\_pub\_}{32}{subsubsection.11.1.4.16}%
+\contentsline {subsubsection}{\numberline {11.1.4.17}safe\_zone}{32}{subsubsection.11.1.4.17}%
+\contentsline {subsubsection}{\numberline {11.1.4.18}smoothed\_reference\_pub\_}{33}{subsubsection.11.1.4.18}%
+\contentsline {subsubsection}{\numberline {11.1.4.19}state}{33}{subsubsection.11.1.4.19}%
+\contentsline {subsubsection}{\numberline {11.1.4.20}stop}{33}{subsubsection.11.1.4.20}%
+\contentsline {subsubsection}{\numberline {11.1.4.21}takeoff}{33}{subsubsection.11.1.4.21}%
+\contentsline {subsubsection}{\numberline {11.1.4.22}takeoff\_pub\_}{33}{subsubsection.11.1.4.22}%
+\contentsline {subsubsection}{\numberline {11.1.4.23}timeOut}{33}{subsubsection.11.1.4.23}%
+\contentsline {subsubsection}{\numberline {11.1.4.24}waypointHasBeenPublished\_}{34}{subsubsection.11.1.4.24}%
+\contentsline {section}{\numberline {11.2}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::CITCController Class Reference}{34}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Detailed Description}{34}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Constructor \& Destructor Documentation}{34}{subsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.2.1}CITCController()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{34}{subsubsection.11.2.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2.2}CITCController()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{35}{subsubsection.11.2.2.2}%
+\contentsline {section}{\numberline {11.3}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Velocities Struct Reference}{35}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Detailed Description}{35}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Member Data Documentation}{35}{subsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.2.1}x}{35}{subsubsection.11.3.2.1}%
+\contentsline {subsubsection}{\numberline {11.3.2.2}y}{36}{subsubsection.11.3.2.2}%
+\contentsline {subsubsection}{\numberline {11.3.2.3}yaw}{36}{subsubsection.11.3.2.3}%
+\contentsline {subsubsection}{\numberline {11.3.2.4}z}{36}{subsubsection.11.3.2.4}%
+\contentsline {section}{\numberline {11.4}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CSV Class Reference}{36}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Detailed Description}{36}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Constructor \& Destructor Documentation}{36}{subsection.11.4.2}%
+\contentsline {subsubsection}{\numberline {11.4.2.1}DataToCSV()}{37}{subsubsection.11.4.2.1}%
+\contentsline {subsubsection}{\numberline {11.4.2.2}$\sim $DataToCSV()}{37}{subsubsection.11.4.2.2}%
+\contentsline {section}{\numberline {11.5}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CSVParameters Struct Reference}{37}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}Detailed Description}{37}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}Member Data Documentation}{37}{subsection.11.5.2}%
+\contentsline {subsubsection}{\numberline {11.5.2.1}File}{38}{subsubsection.11.5.2.1}%
+\contentsline {subsubsection}{\numberline {11.5.2.2}Initial\_Time}{38}{subsubsection.11.5.2.2}%
+\contentsline {subsubsection}{\numberline {11.5.2.3}Margin\_Time}{38}{subsubsection.11.5.2.3}%
+\contentsline {subsubsection}{\numberline {11.5.2.4}Topic\_CMD\_Vel}{38}{subsubsection.11.5.2.4}%
+\contentsline {subsubsection}{\numberline {11.5.2.5}Topic\_CSV\_Begin}{38}{subsubsection.11.5.2.5}%
+\contentsline {subsubsection}{\numberline {11.5.2.6}Topic\_CSV\_End}{38}{subsubsection.11.5.2.6}%
+\contentsline {subsubsection}{\numberline {11.5.2.7}Topic\_Drone\_Pose}{39}{subsubsection.11.5.2.7}%
+\contentsline {subsubsection}{\numberline {11.5.2.8}Topic\_Reference\_Pose}{39}{subsubsection.11.5.2.8}%
+\contentsline {subsubsection}{\numberline {11.5.2.9}Topic\_Velocities}{39}{subsubsection.11.5.2.9}%
+\contentsline {section}{\numberline {11.6}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Normalize Struct Reference}{39}{section.11.6}%
+\contentsline {subsection}{\numberline {11.6.1}Detailed Description}{39}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.2}Member Data Documentation}{39}{subsection.11.6.2}%
+\contentsline {subsubsection}{\numberline {11.6.2.1}angle}{40}{subsubsection.11.6.2.1}%
+\contentsline {subsubsection}{\numberline {11.6.2.2}horizontal}{40}{subsubsection.11.6.2.2}%
+\contentsline {subsubsection}{\numberline {11.6.2.3}rotation}{40}{subsubsection.11.6.2.3}%
+\contentsline {subsubsection}{\numberline {11.6.2.4}vertical}{40}{subsubsection.11.6.2.4}%
+\contentsline {section}{\numberline {11.7}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::PIDController Class Reference}{40}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Detailed Description}{41}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}Constructor \& Destructor Documentation}{41}{subsection.11.7.2}%
+\contentsline {subsubsection}{\numberline {11.7.2.1}PIDController()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{41}{subsubsection.11.7.2.1}%
+\contentsline {subsubsection}{\numberline {11.7.2.2}PIDController()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{41}{subsubsection.11.7.2.2}%
+\contentsline {section}{\numberline {11.8}plot.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Plots Class Reference}{41}{section.11.8}%
+\contentsline {subsection}{\numberline {11.8.1}Detailed Description}{42}{subsection.11.8.1}%
+\contentsline {subsection}{\numberline {11.8.2}Constructor \& Destructor Documentation}{42}{subsection.11.8.2}%
+\contentsline {subsubsection}{\numberline {11.8.2.1}\_\_init\_\_()}{42}{subsubsection.11.8.2.1}%
+\contentsline {subsection}{\numberline {11.8.3}Member Function Documentation}{42}{subsection.11.8.3}%
+\contentsline {subsubsection}{\numberline {11.8.3.1}Plot()}{42}{subsubsection.11.8.3.1}%
+\contentsline {subsection}{\numberline {11.8.4}Member Data Documentation}{42}{subsection.11.8.4}%
+\contentsline {subsubsection}{\numberline {11.8.4.1}path}{42}{subsubsection.11.8.4.1}%
+\contentsline {subsubsection}{\numberline {11.8.4.2}yaml}{43}{subsubsection.11.8.4.2}%
+\contentsline {section}{\numberline {11.9}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Class Reference}{43}{section.11.9}%
+\contentsline {subsection}{\numberline {11.9.1}Detailed Description}{43}{subsection.11.9.1}%
+\contentsline {subsection}{\numberline {11.9.2}Constructor \& Destructor Documentation}{43}{subsection.11.9.2}%
+\contentsline {subsubsection}{\numberline {11.9.2.1}ProportionalController()}{43}{subsubsection.11.9.2.1}%
+\contentsline {section}{\numberline {11.10}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Sinusoidal Class Reference}{44}{section.11.10}%
+\contentsline {subsection}{\numberline {11.10.1}Detailed Description}{44}{subsection.11.10.1}%
+\contentsline {subsection}{\numberline {11.10.2}Constructor \& Destructor Documentation}{44}{subsection.11.10.2}%
+\contentsline {subsubsection}{\numberline {11.10.2.1}Sinusoidal()}{44}{subsubsection.11.10.2.1}%
+\contentsline {section}{\numberline {11.11}gazebo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sphinx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Publisher Class Reference}{44}{section.11.11}%
+\contentsline {subsection}{\numberline {11.11.1}Detailed Description}{45}{subsection.11.11.1}%
+\contentsline {subsection}{\numberline {11.11.2}Constructor \& Destructor Documentation}{45}{subsection.11.11.2}%
+\contentsline {subsubsection}{\numberline {11.11.2.1}\_\_init\_\_()}{45}{subsubsection.11.11.2.1}%
+\contentsline {subsection}{\numberline {11.11.3}Member Function Documentation}{45}{subsection.11.11.3}%
+\contentsline {subsubsection}{\numberline {11.11.3.1}process\_output()}{45}{subsubsection.11.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.11.3.2}publish()}{46}{subsubsection.11.11.3.2}%
+\contentsline {subsection}{\numberline {11.11.4}Member Data Documentation}{46}{subsection.11.11.4}%
+\contentsline {subsubsection}{\numberline {11.11.4.1}att}{46}{subsubsection.11.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.11.4.2}cont}{46}{subsubsection.11.11.4.2}%
+\contentsline {subsubsection}{\numberline {11.11.4.3}odom\_pub}{46}{subsubsection.11.11.4.3}%
+\contentsline {subsubsection}{\numberline {11.11.4.4}pos}{46}{subsubsection.11.11.4.4}%
+\contentsline {subsubsection}{\numberline {11.11.4.5}q}{47}{subsubsection.11.11.4.5}%
+\contentsline {section}{\numberline {11.12}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Class Reference}{47}{section.11.12}%
+\contentsline {subsection}{\numberline {11.12.1}Detailed Description}{47}{subsection.11.12.1}%
+\contentsline {subsection}{\numberline {11.12.2}Constructor \& Destructor Documentation}{47}{subsection.11.12.2}%
+\contentsline {subsubsection}{\numberline {11.12.2.1}SquareRootController()}{47}{subsubsection.11.12.2.1}%
+\contentsline {section}{\numberline {11.13}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::State Struct Reference}{48}{section.11.13}%
+\contentsline {subsection}{\numberline {11.13.1}Detailed Description}{48}{subsection.11.13.1}%
+\contentsline {subsection}{\numberline {11.13.2}Member Data Documentation}{48}{subsection.11.13.2}%
+\contentsline {subsubsection}{\numberline {11.13.2.1}acceleration}{48}{subsubsection.11.13.2.1}%
+\contentsline {subsubsection}{\numberline {11.13.2.2}angular\_acceleration}{48}{subsubsection.11.13.2.2}%
+\contentsline {subsubsection}{\numberline {11.13.2.3}angular\_velocity}{48}{subsubsection.11.13.2.3}%
+\contentsline {subsubsection}{\numberline {11.13.2.4}orientation}{49}{subsubsection.11.13.2.4}%
+\contentsline {subsubsection}{\numberline {11.13.2.5}position}{49}{subsubsection.11.13.2.5}%
+\contentsline {subsubsection}{\numberline {11.13.2.6}velocity}{49}{subsubsection.11.13.2.6}%
+\contentsline {section}{\numberline {11.14}Trajectory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameters Struct Reference}{49}{section.11.14}%
+\contentsline {subsection}{\numberline {11.14.1}Detailed Description}{49}{subsection.11.14.1}%
+\contentsline {subsection}{\numberline {11.14.2}Member Data Documentation}{49}{subsection.11.14.2}%
+\contentsline {subsubsection}{\numberline {11.14.2.1}PositionBeforeTrajectory}{50}{subsubsection.11.14.2.1}%
+\contentsline {subsubsection}{\numberline {11.14.2.2}TrajectoryDistance}{50}{subsubsection.11.14.2.2}%
+\contentsline {subsubsection}{\numberline {11.14.2.3}Yaw\_Enabled}{50}{subsubsection.11.14.2.3}%
+\contentsline {subsubsection}{\numberline {11.14.2.4}Yaw\_Offset}{50}{subsubsection.11.14.2.4}%
+\contentsline {section}{\numberline {11.15}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Vector3 Struct Reference}{50}{section.11.15}%
+\contentsline {subsection}{\numberline {11.15.1}Detailed Description}{51}{subsection.11.15.1}%
+\contentsline {subsection}{\numberline {11.15.2}Member Data Documentation}{51}{subsection.11.15.2}%
+\contentsline {subsubsection}{\numberline {11.15.2.1}x}{51}{subsubsection.11.15.2.1}%
+\contentsline {subsubsection}{\numberline {11.15.2.2}y}{51}{subsubsection.11.15.2.2}%
+\contentsline {subsubsection}{\numberline {11.15.2.3}z}{51}{subsubsection.11.15.2.3}%
+\contentsline {section}{\numberline {11.16}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Vector4 Struct Reference}{51}{section.11.16}%
+\contentsline {subsection}{\numberline {11.16.1}Detailed Description}{52}{subsection.11.16.1}%
+\contentsline {subsection}{\numberline {11.16.2}Member Data Documentation}{52}{subsection.11.16.2}%
+\contentsline {subsubsection}{\numberline {11.16.2.1}x}{52}{subsubsection.11.16.2.1}%
+\contentsline {subsubsection}{\numberline {11.16.2.2}y}{52}{subsubsection.11.16.2.2}%
+\contentsline {subsubsection}{\numberline {11.16.2.3}yaw}{52}{subsubsection.11.16.2.3}%
+\contentsline {subsubsection}{\numberline {11.16.2.4}z}{52}{subsubsection.11.16.2.4}%
+\contentsline {section}{\numberline {11.17}bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Waypoint Class Reference}{53}{section.11.17}%
+\contentsline {subsection}{\numberline {11.17.1}Detailed Description}{53}{subsection.11.17.1}%
+\contentsline {subsection}{\numberline {11.17.2}Constructor \& Destructor Documentation}{53}{subsection.11.17.2}%
+\contentsline {subsubsection}{\numberline {11.17.2.1}Waypoint()}{54}{subsubsection.11.17.2.1}%
+\contentsline {subsubsection}{\numberline {11.17.2.2}$\sim $Waypoint()}{54}{subsubsection.11.17.2.2}%
+\contentsline {subsection}{\numberline {11.17.3}Member Function Documentation}{54}{subsection.11.17.3}%
+\contentsline {subsubsection}{\numberline {11.17.3.1}Start\_CB()}{54}{subsubsection.11.17.3.1}%
+\contentsline {subsubsection}{\numberline {11.17.3.2}Stop\_CB()}{54}{subsubsection.11.17.3.2}%
+\contentsline {subsubsection}{\numberline {11.17.3.3}Trajectory\_CB()}{54}{subsubsection.11.17.3.3}%
+\contentsline {subsection}{\numberline {11.17.4}Member Data Documentation}{54}{subsection.11.17.4}%
+\contentsline {subsubsection}{\numberline {11.17.4.1}\_n1}{55}{subsubsection.11.17.4.1}%
+\contentsline {subsubsection}{\numberline {11.17.4.2}\_n2}{55}{subsubsection.11.17.4.2}%
+\contentsline {subsubsection}{\numberline {11.17.4.3}\_n3}{55}{subsubsection.11.17.4.3}%
+\contentsline {subsubsection}{\numberline {11.17.4.4}\_timer1}{55}{subsubsection.11.17.4.4}%
+\contentsline {subsubsection}{\numberline {11.17.4.5}\_timer2}{55}{subsubsection.11.17.4.5}%
+\contentsline {subsubsection}{\numberline {11.17.4.6}\_timer3}{55}{subsubsection.11.17.4.6}%
+\contentsline {subsubsection}{\numberline {11.17.4.7}Begin\_}{56}{subsubsection.11.17.4.7}%
+\contentsline {subsubsection}{\numberline {11.17.4.8}End\_}{56}{subsubsection.11.17.4.8}%
+\contentsline {subsubsection}{\numberline {11.17.4.9}Initial\_Time}{56}{subsubsection.11.17.4.9}%
+\contentsline {subsubsection}{\numberline {11.17.4.10}nh}{56}{subsubsection.11.17.4.10}%
+\contentsline {subsubsection}{\numberline {11.17.4.11}position\_target\_}{56}{subsubsection.11.17.4.11}%
+\contentsline {subsubsection}{\numberline {11.17.4.12}setpoint\_pub\_}{56}{subsubsection.11.17.4.12}%
+\contentsline {subsubsection}{\numberline {11.17.4.13}status}{57}{subsubsection.11.17.4.13}%
+\contentsline {subsubsection}{\numberline {11.17.4.14}wp\_params\_}{57}{subsubsection.11.17.4.14}%
+\contentsline {section}{\numberline {11.18}Waypoint\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parameters Struct Reference}{57}{section.11.18}%
+\contentsline {subsection}{\numberline {11.18.1}Detailed Description}{57}{subsection.11.18.1}%
+\contentsline {subsection}{\numberline {11.18.2}Member Data Documentation}{57}{subsection.11.18.2}%
+\contentsline {subsubsection}{\numberline {11.18.2.1}DiffTime}{57}{subsubsection.11.18.2.1}%
+\contentsline {subsubsection}{\numberline {11.18.2.2}MarginTime}{58}{subsubsection.11.18.2.2}%
+\contentsline {subsubsection}{\numberline {11.18.2.3}TimeBeforeTrajectory}{58}{subsubsection.11.18.2.3}%
+\contentsline {subsubsection}{\numberline {11.18.2.4}topic\_command\_trajectory}{58}{subsubsection.11.18.2.4}%
+\contentsline {subsubsection}{\numberline {11.18.2.5}topic\_csv\_begin}{58}{subsubsection.11.18.2.5}%
+\contentsline {subsubsection}{\numberline {11.18.2.6}topic\_csv\_end}{58}{subsubsection.11.18.2.6}%
+\contentsline {subsubsection}{\numberline {11.18.2.7}TrajectoryTime}{58}{subsubsection.11.18.2.7}%
+\contentsline {chapter}{\numberline {12}File Documentation}{59}{chapter.12}%
+\contentsline {section}{\numberline {12.1}documentation.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{59}{section.12.1}%
+\contentsline {section}{\numberline {12.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/include/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{59}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Detailed Description}{60}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Macro Definition Documentation}{60}{subsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.2.1}BEBOP\_CMD\_VEL}{60}{subsubsection.12.2.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2.2}BEBOP\_COMMAND\_TRAJECTORY}{60}{subsubsection.12.2.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.2.3}BEBOP\_LAND}{61}{subsubsection.12.2.2.3}%
+\contentsline {subsubsection}{\numberline {12.2.2.4}BEBOP\_POSE}{61}{subsubsection.12.2.2.4}%
+\contentsline {subsubsection}{\numberline {12.2.2.5}BEBOP\_TAKEOFF}{61}{subsubsection.12.2.2.5}%
+\contentsline {subsubsection}{\numberline {12.2.2.6}CSV\_END}{61}{subsubsection.12.2.2.6}%
+\contentsline {subsubsection}{\numberline {12.2.2.7}DISABLE\_COMMANDS}{61}{subsubsection.12.2.2.7}%
+\contentsline {subsubsection}{\numberline {12.2.2.8}GRAVITY}{61}{subsubsection.12.2.2.8}%
+\contentsline {subsubsection}{\numberline {12.2.2.9}LIMIT\_X}{62}{subsubsection.12.2.2.9}%
+\contentsline {subsubsection}{\numberline {12.2.2.10}LIMIT\_Y}{62}{subsubsection.12.2.2.10}%
+\contentsline {subsubsection}{\numberline {12.2.2.11}LIMIT\_YAW}{62}{subsubsection.12.2.2.11}%
+\contentsline {subsubsection}{\numberline {12.2.2.12}LIMIT\_Z}{62}{subsubsection.12.2.2.12}%
+\contentsline {subsubsection}{\numberline {12.2.2.13}MIN\_ACCEL}{62}{subsubsection.12.2.2.13}%
+\contentsline {subsubsection}{\numberline {12.2.2.14}MIN\_VEL}{62}{subsubsection.12.2.2.14}%
+\contentsline {subsubsection}{\numberline {12.2.2.15}SAFE\_ZONE\_X}{63}{subsubsection.12.2.2.15}%
+\contentsline {subsubsection}{\numberline {12.2.2.16}SAFE\_ZONE\_Y}{63}{subsubsection.12.2.2.16}%
+\contentsline {subsubsection}{\numberline {12.2.2.17}SAFE\_ZONE\_Z}{63}{subsubsection.12.2.2.17}%
+\contentsline {section}{\numberline {12.3}base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{63}{section.12.3}%
+\contentsline {section}{\numberline {12.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/include/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/common.h File Reference}{64}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Detailed Description}{65}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Function Documentation}{65}{subsection.12.4.2}%
+\contentsline {subsubsection}{\numberline {12.4.2.1}secsFromHeaderMsg()}{65}{subsubsection.12.4.2.1}%
+\contentsline {subsubsection}{\numberline {12.4.2.2}vector4FromQuaternionMsg()}{66}{subsubsection.12.4.2.2}%
+\contentsline {section}{\numberline {12.5}common.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{66}{section.12.5}%
+\contentsline {section}{\numberline {12.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/include/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/waypoint.h File Reference}{67}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Detailed Description}{68}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}Enumeration Type Documentation}{68}{subsection.12.6.2}%
+\contentsline {subsubsection}{\numberline {12.6.2.1}Status}{68}{subsubsection.12.6.2.1}%
+\contentsline {section}{\numberline {12.7}waypoint.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{68}{section.12.7}%
+\contentsline {section}{\numberline {12.8}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.launch File Reference}{69}{section.12.8}%
+\contentsline {subsection}{\numberline {12.8.1}Detailed Description}{69}{subsection.12.8.1}%
+\contentsline {section}{\numberline {12.9}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{69}{section.12.9}%
+\contentsline {section}{\numberline {12.10}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.launch File Reference}{70}{section.12.10}%
+\contentsline {subsection}{\numberline {12.10.1}Detailed Description}{70}{subsection.12.10.1}%
+\contentsline {section}{\numberline {12.11}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{70}{section.12.11}%
+\contentsline {section}{\numberline {12.12}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/gazebo.launch File Reference}{71}{section.12.12}%
+\contentsline {subsection}{\numberline {12.12.1}Detailed Description}{71}{subsection.12.12.1}%
+\contentsline {section}{\numberline {12.13}gazebo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{71}{section.12.13}%
+\contentsline {section}{\numberline {12.14}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.launch File Reference}{71}{section.12.14}%
+\contentsline {subsection}{\numberline {12.14.1}Detailed Description}{71}{subsection.12.14.1}%
+\contentsline {section}{\numberline {12.15}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{72}{section.12.15}%
+\contentsline {section}{\numberline {12.16}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.launch File Reference}{72}{section.12.16}%
+\contentsline {subsection}{\numberline {12.16.1}Detailed Description}{72}{subsection.12.16.1}%
+\contentsline {section}{\numberline {12.17}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{72}{section.12.17}%
+\contentsline {section}{\numberline {12.18}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.launch File Reference}{73}{section.12.18}%
+\contentsline {subsection}{\numberline {12.18.1}Detailed Description}{73}{subsection.12.18.1}%
+\contentsline {section}{\numberline {12.19}proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{73}{section.12.19}%
+\contentsline {section}{\numberline {12.20}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.launch File Reference}{74}{section.12.20}%
+\contentsline {subsection}{\numberline {12.20.1}Detailed Description}{74}{subsection.12.20.1}%
+\contentsline {section}{\numberline {12.21}square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{74}{section.12.21}%
+\contentsline {section}{\numberline {12.22}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/launch/vrpn\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}client\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ros.launch File Reference}{75}{section.12.22}%
+\contentsline {subsection}{\numberline {12.22.1}Detailed Description}{75}{subsection.12.22.1}%
+\contentsline {section}{\numberline {12.23}vrpn\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}client\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}launch}{75}{section.12.23}%
+\contentsline {section}{\numberline {12.24}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.yaml File Reference}{75}{section.12.24}%
+\contentsline {subsection}{\numberline {12.24.1}Detailed Description}{75}{subsection.12.24.1}%
+\contentsline {section}{\numberline {12.25}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{76}{section.12.25}%
+\contentsline {section}{\numberline {12.26}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.yaml File Reference}{76}{section.12.26}%
+\contentsline {subsection}{\numberline {12.26.1}Detailed Description}{76}{subsection.12.26.1}%
+\contentsline {section}{\numberline {12.27}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{77}{section.12.27}%
+\contentsline {section}{\numberline {12.28}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}speed.yaml File Reference}{77}{section.12.28}%
+\contentsline {subsection}{\numberline {12.28.1}Detailed Description}{77}{subsection.12.28.1}%
+\contentsline {section}{\numberline {12.29}max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}speed.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{77}{section.12.29}%
+\contentsline {section}{\numberline {12.30}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/normalize\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.yaml File Reference}{77}{section.12.30}%
+\contentsline {subsection}{\numberline {12.30.1}Detailed Description}{78}{subsection.12.30.1}%
+\contentsline {section}{\numberline {12.31}normalize\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{78}{section.12.31}%
+\contentsline {section}{\numberline {12.32}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/normalize\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.yaml File Reference}{78}{section.12.32}%
+\contentsline {subsection}{\numberline {12.32.1}Detailed Description}{78}{subsection.12.32.1}%
+\contentsline {section}{\numberline {12.33}normalize\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{78}{section.12.33}%
+\contentsline {section}{\numberline {12.34}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.yaml File Reference}{78}{section.12.34}%
+\contentsline {subsection}{\numberline {12.34.1}Detailed Description}{78}{subsection.12.34.1}%
+\contentsline {section}{\numberline {12.35}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{79}{section.12.35}%
+\contentsline {section}{\numberline {12.36}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.yaml File Reference}{79}{section.12.36}%
+\contentsline {subsection}{\numberline {12.36.1}Detailed Description}{79}{subsection.12.36.1}%
+\contentsline {section}{\numberline {12.37}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{79}{section.12.37}%
+\contentsline {section}{\numberline {12.38}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.yaml File Reference}{80}{section.12.38}%
+\contentsline {subsection}{\numberline {12.38.1}Detailed Description}{80}{subsection.12.38.1}%
+\contentsline {section}{\numberline {12.39}proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{80}{section.12.39}%
+\contentsline {section}{\numberline {12.40}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/safe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}zone.yaml File Reference}{80}{section.12.40}%
+\contentsline {subsection}{\numberline {12.40.1}Detailed Description}{80}{subsection.12.40.1}%
+\contentsline {section}{\numberline {12.41}safe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}zone.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{80}{section.12.41}%
+\contentsline {section}{\numberline {12.42}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.yaml File Reference}{80}{section.12.42}%
+\contentsline {subsection}{\numberline {12.42.1}Detailed Description}{81}{subsection.12.42.1}%
+\contentsline {section}{\numberline {12.43}square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{81}{section.12.43}%
+\contentsline {section}{\numberline {12.44}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/topics.yaml File Reference}{81}{section.12.44}%
+\contentsline {subsection}{\numberline {12.44.1}Detailed Description}{81}{subsection.12.44.1}%
+\contentsline {section}{\numberline {12.45}topics.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{81}{section.12.45}%
+\contentsline {section}{\numberline {12.46}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/trajectory.yaml File Reference}{81}{section.12.46}%
+\contentsline {subsection}{\numberline {12.46.1}Detailed Description}{82}{subsection.12.46.1}%
+\contentsline {section}{\numberline {12.47}trajectory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{82}{section.12.47}%
+\contentsline {section}{\numberline {12.48}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/resource/waypoint.yaml File Reference}{82}{section.12.48}%
+\contentsline {subsection}{\numberline {12.48.1}Detailed Description}{82}{subsection.12.48.1}%
+\contentsline {section}{\numberline {12.49}waypoint.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}yaml}{82}{section.12.49}%
+\contentsline {section}{\numberline {12.50}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/scripts/gazebo.py File Reference}{82}{section.12.50}%
+\contentsline {subsection}{\numberline {12.50.1}Detailed Description}{83}{subsection.12.50.1}%
+\contentsline {section}{\numberline {12.51}gazebo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{83}{section.12.51}%
+\contentsline {section}{\numberline {12.52}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/scripts/plot.py File Reference}{84}{section.12.52}%
+\contentsline {subsection}{\numberline {12.52.1}Detailed Description}{85}{subsection.12.52.1}%
+\contentsline {section}{\numberline {12.53}plot.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{85}{section.12.53}%
+\contentsline {section}{\numberline {12.54}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/library/base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{86}{section.12.54}%
+\contentsline {subsection}{\numberline {12.54.1}Detailed Description}{86}{subsection.12.54.1}%
+\contentsline {section}{\numberline {12.55}base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{86}{section.12.55}%
+\contentsline {section}{\numberline {12.56}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/library/waypoint.cpp File Reference}{89}{section.12.56}%
+\contentsline {subsection}{\numberline {12.56.1}Detailed Description}{90}{subsection.12.56.1}%
+\contentsline {section}{\numberline {12.57}waypoint.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{90}{section.12.57}%
+\contentsline {section}{\numberline {12.58}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.cpp File Reference}{90}{section.12.58}%
+\contentsline {subsection}{\numberline {12.58.1}Detailed Description}{91}{subsection.12.58.1}%
+\contentsline {subsection}{\numberline {12.58.2}Function Documentation}{91}{subsection.12.58.2}%
+\contentsline {subsubsection}{\numberline {12.58.2.1}main()}{91}{subsubsection.12.58.2.1}%
+\contentsline {section}{\numberline {12.59}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{91}{section.12.59}%
+\contentsline {section}{\numberline {12.60}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.h File Reference}{93}{section.12.60}%
+\contentsline {subsection}{\numberline {12.60.1}Detailed Description}{94}{subsection.12.60.1}%
+\contentsline {subsection}{\numberline {12.60.2}Macro Definition Documentation}{94}{subsection.12.60.2}%
+\contentsline {subsubsection}{\numberline {12.60.2.1}K1xDefaultValue}{94}{subsubsection.12.60.2.1}%
+\contentsline {subsubsection}{\numberline {12.60.2.2}K1yawDefaultValue}{94}{subsubsection.12.60.2.2}%
+\contentsline {subsubsection}{\numberline {12.60.2.3}K1yDefaultValue}{94}{subsubsection.12.60.2.3}%
+\contentsline {subsubsection}{\numberline {12.60.2.4}K1zDefaultValue}{95}{subsubsection.12.60.2.4}%
+\contentsline {subsubsection}{\numberline {12.60.2.5}K2xDefaultValue}{95}{subsubsection.12.60.2.5}%
+\contentsline {subsubsection}{\numberline {12.60.2.6}K2yawDefaultValue}{95}{subsubsection.12.60.2.6}%
+\contentsline {subsubsection}{\numberline {12.60.2.7}K2yDefaultValue}{95}{subsubsection.12.60.2.7}%
+\contentsline {subsubsection}{\numberline {12.60.2.8}K2zDefaultValue}{95}{subsubsection.12.60.2.8}%
+\contentsline {subsubsection}{\numberline {12.60.2.9}K3xDefaultValue}{95}{subsubsection.12.60.2.9}%
+\contentsline {subsubsection}{\numberline {12.60.2.10}K3yawDefaultValue}{96}{subsubsection.12.60.2.10}%
+\contentsline {subsubsection}{\numberline {12.60.2.11}K3yDefaultValue}{96}{subsubsection.12.60.2.11}%
+\contentsline {subsubsection}{\numberline {12.60.2.12}K3zDefaultValue}{96}{subsubsection.12.60.2.12}%
+\contentsline {subsubsection}{\numberline {12.60.2.13}K4xDefaultValue}{96}{subsubsection.12.60.2.13}%
+\contentsline {subsubsection}{\numberline {12.60.2.14}K4yawDefaultValue}{96}{subsubsection.12.60.2.14}%
+\contentsline {subsubsection}{\numberline {12.60.2.15}K4yDefaultValue}{96}{subsubsection.12.60.2.15}%
+\contentsline {subsubsection}{\numberline {12.60.2.16}K4zDefaultValue}{97}{subsubsection.12.60.2.16}%
+\contentsline {subsubsection}{\numberline {12.60.2.17}LambdaX}{97}{subsubsection.12.60.2.17}%
+\contentsline {subsubsection}{\numberline {12.60.2.18}LambdaY}{97}{subsubsection.12.60.2.18}%
+\contentsline {subsubsection}{\numberline {12.60.2.19}LambdaZ}{97}{subsubsection.12.60.2.19}%
+\contentsline {subsubsection}{\numberline {12.60.2.20}MASS}{97}{subsubsection.12.60.2.20}%
+\contentsline {subsubsection}{\numberline {12.60.2.21}MAX\_ROTATION\_SPEED}{97}{subsubsection.12.60.2.21}%
+\contentsline {subsubsection}{\numberline {12.60.2.22}MAX\_TILT\_ANGLE}{98}{subsubsection.12.60.2.22}%
+\contentsline {subsubsection}{\numberline {12.60.2.23}MAX\_VERTICAL\_SPEED}{98}{subsubsection.12.60.2.23}%
+\contentsline {subsubsection}{\numberline {12.60.2.24}RGxDefaultValue}{98}{subsubsection.12.60.2.24}%
+\contentsline {subsubsection}{\numberline {12.60.2.25}RGyawDefaultValue}{98}{subsubsection.12.60.2.25}%
+\contentsline {subsubsection}{\numberline {12.60.2.26}RGyDefaultValue}{98}{subsubsection.12.60.2.26}%
+\contentsline {subsubsection}{\numberline {12.60.2.27}RGzDefaultValue}{98}{subsubsection.12.60.2.27}%
+\contentsline {subsubsection}{\numberline {12.60.2.28}Sigma}{99}{subsubsection.12.60.2.28}%
+\contentsline {section}{\numberline {12.61}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{99}{section.12.61}%
+\contentsline {section}{\numberline {12.62}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.cpp File Reference}{100}{section.12.62}%
+\contentsline {subsection}{\numberline {12.62.1}Detailed Description}{100}{subsection.12.62.1}%
+\contentsline {subsection}{\numberline {12.62.2}Function Documentation}{100}{subsection.12.62.2}%
+\contentsline {subsubsection}{\numberline {12.62.2.1}main()}{100}{subsubsection.12.62.2.1}%
+\contentsline {section}{\numberline {12.63}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{101}{section.12.63}%
+\contentsline {section}{\numberline {12.64}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.h File Reference}{102}{section.12.64}%
+\contentsline {subsection}{\numberline {12.64.1}Detailed Description}{103}{subsection.12.64.1}%
+\contentsline {subsection}{\numberline {12.64.2}Macro Definition Documentation}{103}{subsection.12.64.2}%
+\contentsline {subsubsection}{\numberline {12.64.2.1}K1xDefaultValue}{103}{subsubsection.12.64.2.1}%
+\contentsline {subsubsection}{\numberline {12.64.2.2}K1yawDefaultValue}{104}{subsubsection.12.64.2.2}%
+\contentsline {subsubsection}{\numberline {12.64.2.3}K1yDefaultValue}{104}{subsubsection.12.64.2.3}%
+\contentsline {subsubsection}{\numberline {12.64.2.4}K1zDefaultValue}{104}{subsubsection.12.64.2.4}%
+\contentsline {subsubsection}{\numberline {12.64.2.5}K2xDefaultValue}{104}{subsubsection.12.64.2.5}%
+\contentsline {subsubsection}{\numberline {12.64.2.6}K2yawDefaultValue}{104}{subsubsection.12.64.2.6}%
+\contentsline {subsubsection}{\numberline {12.64.2.7}K2yDefaultValue}{104}{subsubsection.12.64.2.7}%
+\contentsline {subsubsection}{\numberline {12.64.2.8}K2zDefaultValue}{105}{subsubsection.12.64.2.8}%
+\contentsline {subsubsection}{\numberline {12.64.2.9}K3xDefaultValue}{105}{subsubsection.12.64.2.9}%
+\contentsline {subsubsection}{\numberline {12.64.2.10}K3yawDefaultValue}{105}{subsubsection.12.64.2.10}%
+\contentsline {subsubsection}{\numberline {12.64.2.11}K3yDefaultValue}{105}{subsubsection.12.64.2.11}%
+\contentsline {subsubsection}{\numberline {12.64.2.12}K3zDefaultValue}{105}{subsubsection.12.64.2.12}%
+\contentsline {subsubsection}{\numberline {12.64.2.13}K4xDefaultValue}{105}{subsubsection.12.64.2.13}%
+\contentsline {subsubsection}{\numberline {12.64.2.14}K4yawDefaultValue}{106}{subsubsection.12.64.2.14}%
+\contentsline {subsubsection}{\numberline {12.64.2.15}K4yDefaultValue}{106}{subsubsection.12.64.2.15}%
+\contentsline {subsubsection}{\numberline {12.64.2.16}K4zDefaultValue}{106}{subsubsection.12.64.2.16}%
+\contentsline {subsubsection}{\numberline {12.64.2.17}LambdaX}{106}{subsubsection.12.64.2.17}%
+\contentsline {subsubsection}{\numberline {12.64.2.18}LambdaY}{106}{subsubsection.12.64.2.18}%
+\contentsline {subsubsection}{\numberline {12.64.2.19}LambdaZ}{106}{subsubsection.12.64.2.19}%
+\contentsline {subsubsection}{\numberline {12.64.2.20}MASS}{107}{subsubsection.12.64.2.20}%
+\contentsline {subsubsection}{\numberline {12.64.2.21}MAX\_HORIZONTAL\_SPEED}{107}{subsubsection.12.64.2.21}%
+\contentsline {subsubsection}{\numberline {12.64.2.22}MAX\_ROTATION\_SPEED}{107}{subsubsection.12.64.2.22}%
+\contentsline {subsubsection}{\numberline {12.64.2.23}MAX\_VERTICAL\_SPEED}{107}{subsubsection.12.64.2.23}%
+\contentsline {subsubsection}{\numberline {12.64.2.24}RGxDefaultValue}{107}{subsubsection.12.64.2.24}%
+\contentsline {subsubsection}{\numberline {12.64.2.25}RGyawDefaultValue}{107}{subsubsection.12.64.2.25}%
+\contentsline {subsubsection}{\numberline {12.64.2.26}RGyDefaultValue}{108}{subsubsection.12.64.2.26}%
+\contentsline {subsubsection}{\numberline {12.64.2.27}RGzDefaultValue}{108}{subsubsection.12.64.2.27}%
+\contentsline {subsubsection}{\numberline {12.64.2.28}Sigma}{108}{subsubsection.12.64.2.28}%
+\contentsline {section}{\numberline {12.65}citc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{108}{section.12.65}%
+\contentsline {section}{\numberline {12.66}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}to\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}csv.cpp File Reference}{109}{section.12.66}%
+\contentsline {subsection}{\numberline {12.66.1}Detailed Description}{109}{subsection.12.66.1}%
+\contentsline {subsection}{\numberline {12.66.2}Function Documentation}{109}{subsection.12.66.2}%
+\contentsline {subsubsection}{\numberline {12.66.2.1}main()}{110}{subsubsection.12.66.2.1}%
+\contentsline {section}{\numberline {12.67}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}to\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}csv.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{110}{section.12.67}%
+\contentsline {section}{\numberline {12.68}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}to\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}csv.h File Reference}{111}{section.12.68}%
+\contentsline {subsection}{\numberline {12.68.1}Detailed Description}{112}{subsection.12.68.1}%
+\contentsline {section}{\numberline {12.69}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}to\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}csv.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{112}{section.12.69}%
+\contentsline {section}{\numberline {12.70}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.cpp File Reference}{113}{section.12.70}%
+\contentsline {subsection}{\numberline {12.70.1}Detailed Description}{113}{subsection.12.70.1}%
+\contentsline {subsection}{\numberline {12.70.2}Function Documentation}{113}{subsection.12.70.2}%
+\contentsline {subsubsection}{\numberline {12.70.2.1}main()}{113}{subsubsection.12.70.2.1}%
+\contentsline {section}{\numberline {12.71}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{114}{section.12.71}%
+\contentsline {section}{\numberline {12.72}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.h File Reference}{115}{section.12.72}%
+\contentsline {subsection}{\numberline {12.72.1}Detailed Description}{116}{subsection.12.72.1}%
+\contentsline {subsection}{\numberline {12.72.2}Macro Definition Documentation}{116}{subsection.12.72.2}%
+\contentsline {subsubsection}{\numberline {12.72.2.1}DxDefaultValue}{116}{subsubsection.12.72.2.1}%
+\contentsline {subsubsection}{\numberline {12.72.2.2}DyawDefaultValue}{116}{subsubsection.12.72.2.2}%
+\contentsline {subsubsection}{\numberline {12.72.2.3}DyDefaultValue}{116}{subsubsection.12.72.2.3}%
+\contentsline {subsubsection}{\numberline {12.72.2.4}DzDefaultValue}{117}{subsubsection.12.72.2.4}%
+\contentsline {subsubsection}{\numberline {12.72.2.5}IxDefaultValue}{117}{subsubsection.12.72.2.5}%
+\contentsline {subsubsection}{\numberline {12.72.2.6}IyawDefaultValue}{117}{subsubsection.12.72.2.6}%
+\contentsline {subsubsection}{\numberline {12.72.2.7}IyDefaultValue}{117}{subsubsection.12.72.2.7}%
+\contentsline {subsubsection}{\numberline {12.72.2.8}IzDefaultValue}{117}{subsubsection.12.72.2.8}%
+\contentsline {subsubsection}{\numberline {12.72.2.9}LambdaX}{117}{subsubsection.12.72.2.9}%
+\contentsline {subsubsection}{\numberline {12.72.2.10}LambdaY}{118}{subsubsection.12.72.2.10}%
+\contentsline {subsubsection}{\numberline {12.72.2.11}LambdaZ}{118}{subsubsection.12.72.2.11}%
+\contentsline {subsubsection}{\numberline {12.72.2.12}LIxDefaultValue}{118}{subsubsection.12.72.2.12}%
+\contentsline {subsubsection}{\numberline {12.72.2.13}LIyawDefaultValue}{118}{subsubsection.12.72.2.13}%
+\contentsline {subsubsection}{\numberline {12.72.2.14}LIyDefaultValue}{118}{subsubsection.12.72.2.14}%
+\contentsline {subsubsection}{\numberline {12.72.2.15}LIzDefaultValue}{118}{subsubsection.12.72.2.15}%
+\contentsline {subsubsection}{\numberline {12.72.2.16}MASS}{119}{subsubsection.12.72.2.16}%
+\contentsline {subsubsection}{\numberline {12.72.2.17}MAX\_ROTATION\_SPEED}{119}{subsubsection.12.72.2.17}%
+\contentsline {subsubsection}{\numberline {12.72.2.18}MAX\_TILT\_ANGLE}{119}{subsubsection.12.72.2.18}%
+\contentsline {subsubsection}{\numberline {12.72.2.19}MAX\_VERTICAL\_SPEED}{119}{subsubsection.12.72.2.19}%
+\contentsline {subsubsection}{\numberline {12.72.2.20}PxDefaultValue}{119}{subsubsection.12.72.2.20}%
+\contentsline {subsubsection}{\numberline {12.72.2.21}PyawDefaultValue}{119}{subsubsection.12.72.2.21}%
+\contentsline {subsubsection}{\numberline {12.72.2.22}PyDefaultValue}{120}{subsubsection.12.72.2.22}%
+\contentsline {subsubsection}{\numberline {12.72.2.23}PzDefaultValue}{120}{subsubsection.12.72.2.23}%
+\contentsline {subsubsection}{\numberline {12.72.2.24}RGxDefaultValue}{120}{subsubsection.12.72.2.24}%
+\contentsline {subsubsection}{\numberline {12.72.2.25}RGyawDefaultValue}{120}{subsubsection.12.72.2.25}%
+\contentsline {subsubsection}{\numberline {12.72.2.26}RGyDefaultValue}{120}{subsubsection.12.72.2.26}%
+\contentsline {subsubsection}{\numberline {12.72.2.27}RGzDefaultValue}{120}{subsubsection.12.72.2.27}%
+\contentsline {section}{\numberline {12.73}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}angles.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{121}{section.12.73}%
+\contentsline {section}{\numberline {12.74}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.cpp File Reference}{121}{section.12.74}%
+\contentsline {subsection}{\numberline {12.74.1}Detailed Description}{122}{subsection.12.74.1}%
+\contentsline {subsection}{\numberline {12.74.2}Function Documentation}{122}{subsection.12.74.2}%
+\contentsline {subsubsection}{\numberline {12.74.2.1}main()}{122}{subsubsection.12.74.2.1}%
+\contentsline {section}{\numberline {12.75}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{122}{section.12.75}%
+\contentsline {section}{\numberline {12.76}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.h File Reference}{123}{section.12.76}%
+\contentsline {subsection}{\numberline {12.76.1}Detailed Description}{124}{subsection.12.76.1}%
+\contentsline {subsection}{\numberline {12.76.2}Macro Definition Documentation}{124}{subsection.12.76.2}%
+\contentsline {subsubsection}{\numberline {12.76.2.1}DxDefaultValue}{125}{subsubsection.12.76.2.1}%
+\contentsline {subsubsection}{\numberline {12.76.2.2}DyawDefaultValue}{125}{subsubsection.12.76.2.2}%
+\contentsline {subsubsection}{\numberline {12.76.2.3}DyDefaultValue}{125}{subsubsection.12.76.2.3}%
+\contentsline {subsubsection}{\numberline {12.76.2.4}DzDefaultValue}{125}{subsubsection.12.76.2.4}%
+\contentsline {subsubsection}{\numberline {12.76.2.5}IxDefaultValue}{125}{subsubsection.12.76.2.5}%
+\contentsline {subsubsection}{\numberline {12.76.2.6}IyawDefaultValue}{125}{subsubsection.12.76.2.6}%
+\contentsline {subsubsection}{\numberline {12.76.2.7}IyDefaultValue}{126}{subsubsection.12.76.2.7}%
+\contentsline {subsubsection}{\numberline {12.76.2.8}IzDefaultValue}{126}{subsubsection.12.76.2.8}%
+\contentsline {subsubsection}{\numberline {12.76.2.9}LambdaX}{126}{subsubsection.12.76.2.9}%
+\contentsline {subsubsection}{\numberline {12.76.2.10}LambdaY}{126}{subsubsection.12.76.2.10}%
+\contentsline {subsubsection}{\numberline {12.76.2.11}LambdaZ}{126}{subsubsection.12.76.2.11}%
+\contentsline {subsubsection}{\numberline {12.76.2.12}LIxDefaultValue}{126}{subsubsection.12.76.2.12}%
+\contentsline {subsubsection}{\numberline {12.76.2.13}LIyawDefaultValue}{127}{subsubsection.12.76.2.13}%
+\contentsline {subsubsection}{\numberline {12.76.2.14}LIyDefaultValue}{127}{subsubsection.12.76.2.14}%
+\contentsline {subsubsection}{\numberline {12.76.2.15}LIzDefaultValue}{127}{subsubsection.12.76.2.15}%
+\contentsline {subsubsection}{\numberline {12.76.2.16}MASS}{127}{subsubsection.12.76.2.16}%
+\contentsline {subsubsection}{\numberline {12.76.2.17}MAX\_HORIZONTAL\_SPEED}{127}{subsubsection.12.76.2.17}%
+\contentsline {subsubsection}{\numberline {12.76.2.18}MAX\_ROTATION\_SPEED}{127}{subsubsection.12.76.2.18}%
+\contentsline {subsubsection}{\numberline {12.76.2.19}MAX\_VERTICAL\_SPEED}{128}{subsubsection.12.76.2.19}%
+\contentsline {subsubsection}{\numberline {12.76.2.20}PxDefaultValue}{128}{subsubsection.12.76.2.20}%
+\contentsline {subsubsection}{\numberline {12.76.2.21}PyawDefaultValue}{128}{subsubsection.12.76.2.21}%
+\contentsline {subsubsection}{\numberline {12.76.2.22}PyDefaultValue}{128}{subsubsection.12.76.2.22}%
+\contentsline {subsubsection}{\numberline {12.76.2.23}PzDefaultValue}{128}{subsubsection.12.76.2.23}%
+\contentsline {subsubsection}{\numberline {12.76.2.24}RGxDefaultValue}{128}{subsubsection.12.76.2.24}%
+\contentsline {subsubsection}{\numberline {12.76.2.25}RGyawDefaultValue}{129}{subsubsection.12.76.2.25}%
+\contentsline {subsubsection}{\numberline {12.76.2.26}RGyDefaultValue}{129}{subsubsection.12.76.2.26}%
+\contentsline {subsubsection}{\numberline {12.76.2.27}RGzDefaultValue}{129}{subsubsection.12.76.2.27}%
+\contentsline {section}{\numberline {12.77}pid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}twist.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{129}{section.12.77}%
+\contentsline {section}{\numberline {12.78}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{130}{section.12.78}%
+\contentsline {subsection}{\numberline {12.78.1}Detailed Description}{130}{subsection.12.78.1}%
+\contentsline {subsection}{\numberline {12.78.2}Function Documentation}{130}{subsection.12.78.2}%
+\contentsline {subsubsection}{\numberline {12.78.2.1}main()}{130}{subsubsection.12.78.2.1}%
+\contentsline {section}{\numberline {12.79}proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{131}{section.12.79}%
+\contentsline {section}{\numberline {12.80}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{131}{section.12.80}%
+\contentsline {subsection}{\numberline {12.80.1}Detailed Description}{132}{subsection.12.80.1}%
+\contentsline {subsection}{\numberline {12.80.2}Macro Definition Documentation}{132}{subsection.12.80.2}%
+\contentsline {subsubsection}{\numberline {12.80.2.1}MAX\_HORIZONTAL\_SPEED}{132}{subsubsection.12.80.2.1}%
+\contentsline {subsubsection}{\numberline {12.80.2.2}MAX\_ROTATION\_SPEED}{132}{subsubsection.12.80.2.2}%
+\contentsline {subsubsection}{\numberline {12.80.2.3}MAX\_VERTICAL\_SPEED}{133}{subsubsection.12.80.2.3}%
+\contentsline {subsubsection}{\numberline {12.80.2.4}PxDefaultValue}{133}{subsubsection.12.80.2.4}%
+\contentsline {subsubsection}{\numberline {12.80.2.5}PyawDefaultValue}{133}{subsubsection.12.80.2.5}%
+\contentsline {subsubsection}{\numberline {12.80.2.6}PyDefaultValue}{133}{subsubsection.12.80.2.6}%
+\contentsline {subsubsection}{\numberline {12.80.2.7}PzDefaultValue}{133}{subsubsection.12.80.2.7}%
+\contentsline {subsubsection}{\numberline {12.80.2.8}RGxDefaultValue}{133}{subsubsection.12.80.2.8}%
+\contentsline {subsubsection}{\numberline {12.80.2.9}RGyawDefaultValue}{134}{subsubsection.12.80.2.9}%
+\contentsline {subsubsection}{\numberline {12.80.2.10}RGyDefaultValue}{134}{subsubsection.12.80.2.10}%
+\contentsline {subsubsection}{\numberline {12.80.2.11}RGzDefaultValue}{134}{subsubsection.12.80.2.11}%
+\contentsline {section}{\numberline {12.81}proportional\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{134}{section.12.81}%
+\contentsline {section}{\numberline {12.82}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/sinusoidal.cpp File Reference}{135}{section.12.82}%
+\contentsline {subsection}{\numberline {12.82.1}Function Documentation}{135}{subsection.12.82.1}%
+\contentsline {subsubsection}{\numberline {12.82.1.1}main()}{135}{subsubsection.12.82.1.1}%
+\contentsline {section}{\numberline {12.83}sinusoidal.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{135}{section.12.83}%
+\contentsline {section}{\numberline {12.84}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/sinusoidal.h File Reference}{137}{section.12.84}%
+\contentsline {section}{\numberline {12.85}sinusoidal.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{137}{section.12.85}%
+\contentsline {section}{\numberline {12.86}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{137}{section.12.86}%
+\contentsline {subsection}{\numberline {12.86.1}Detailed Description}{138}{subsection.12.86.1}%
+\contentsline {subsection}{\numberline {12.86.2}Function Documentation}{138}{subsection.12.86.2}%
+\contentsline {subsubsection}{\numberline {12.86.2.1}main()}{138}{subsubsection.12.86.2.1}%
+\contentsline {section}{\numberline {12.87}square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{138}{section.12.87}%
+\contentsline {section}{\numberline {12.88}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/franc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ubuntu/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/bebop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller/src/nodes/square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{139}{section.12.88}%
+\contentsline {subsection}{\numberline {12.88.1}Detailed Description}{140}{subsection.12.88.1}%
+\contentsline {subsection}{\numberline {12.88.2}Macro Definition Documentation}{140}{subsection.12.88.2}%
+\contentsline {subsubsection}{\numberline {12.88.2.1}MAX\_HORIZONTAL\_SPEED}{140}{subsubsection.12.88.2.1}%
+\contentsline {subsubsection}{\numberline {12.88.2.2}MAX\_ROTATION\_SPEED}{140}{subsubsection.12.88.2.2}%
+\contentsline {subsubsection}{\numberline {12.88.2.3}MAX\_VERTICAL\_SPEED}{140}{subsubsection.12.88.2.3}%
+\contentsline {subsubsection}{\numberline {12.88.2.4}PxDefaultValue}{140}{subsubsection.12.88.2.4}%
+\contentsline {subsubsection}{\numberline {12.88.2.5}PyawDefaultValue}{140}{subsubsection.12.88.2.5}%
+\contentsline {subsubsection}{\numberline {12.88.2.6}PyDefaultValue}{141}{subsubsection.12.88.2.6}%
+\contentsline {subsubsection}{\numberline {12.88.2.7}PzDefaultValue}{141}{subsubsection.12.88.2.7}%
+\contentsline {subsubsection}{\numberline {12.88.2.8}RGxDefaultValue}{141}{subsubsection.12.88.2.8}%
+\contentsline {subsubsection}{\numberline {12.88.2.9}RGyawDefaultValue}{141}{subsubsection.12.88.2.9}%
+\contentsline {subsubsection}{\numberline {12.88.2.10}RGyDefaultValue}{141}{subsubsection.12.88.2.10}%
+\contentsline {subsubsection}{\numberline {12.88.2.11}RGzDefaultValue}{141}{subsubsection.12.88.2.11}%
+\contentsline {section}{\numberline {12.89}square\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}root\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{142}{section.12.89}%
+\contentsline {chapter}{Index}{143}{section*.97}%

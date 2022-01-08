@@ -1,3 +1,6 @@
+/// @file square_root_controller.h
+/// @brief Header file for square root controller.
+
 #include "bebop_controller/base_controller.h"
 
 #define PxDefaultValue 1.0
@@ -16,12 +19,14 @@
 
 namespace bebop_controller {
 
+    /// Structure for normalization parameters.
     struct Normalize {
         double horizontal;
         double vertical;
         double rotation;
     };
 
+    /// Square root controller class.
     class SquareRootController : public BaseController {
         public:
             SquareRootController();

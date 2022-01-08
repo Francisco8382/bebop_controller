@@ -1,0 +1,359 @@
+\hypertarget{pid__controller__twist_8h}{}\doxysection{C\+:/\+Users/franc/\+Desktop/\+Ubuntu/bebop\+\_\+controller/src/bebop\+\_\+controller/src/nodes/pid\+\_\+controller\+\_\+twist.h File Reference}
+\label{pid__controller__twist_8h}\index{C:/Users/franc/Desktop/Ubuntu/bebop\_controller/src/bebop\_controller/src/nodes/pid\_controller\_twist.h@{C:/Users/franc/Desktop/Ubuntu/bebop\_controller/src/bebop\_controller/src/nodes/pid\_controller\_twist.h}}
+
+
+Header file for PID Controller using velocity commands.  
+
+
+{\ttfamily \#include \char`\"{}bebop\+\_\+controller/base\+\_\+controller.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbebop__controller_1_1_normalize}{bebop\+\_\+controller\+::\+Normalize}}
+\item 
+class \mbox{\hyperlink{classbebop__controller_1_1_p_i_d_controller}{bebop\+\_\+controller\+::\+PIDController}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacebebop__controller}{bebop\+\_\+controller}}
+\begin{DoxyCompactList}\small\item\em Namespace containing all the classes and functions of the Bebop Controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a3dd348ce991235ccb39c5a19b3d93589}{Px\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a8654e0a8831ffeaa4317e1be94b47fc8}{Py\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_accc76b47bca72fb2722615edd004276a}{Pz\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a5501588d717ab46e7a7dd644409ff2bb}{Pyaw\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ad026d32ce8b90b65190195d63032285c}{Dx\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ac93dfb6c80a6c7753d5f52ce7ae5acae}{Dy\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a68640c528a6cefeda5358c20d71b6f9d}{Dz\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_aef52e09a0de472dabbf45f59e0f55e83}{Dyaw\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a875448011a4abbe1c196a47e976486e2}{Ix\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ac8394d59b08eb81d0e6f6e08ca31e48c}{Iy\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a994738f949c04279ce55c62d30afff9a}{Iz\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a2b1258d28392744e593f4e20e33803a0}{Iyaw\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a84e60b41ddf71bb7d643bff84041d042}{LIx\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a98b1b21ca4446a351fc1e9dd50456b78}{LIy\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ad718d2c44c7156b40ea441f2cea84b6d}{LIz\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a77b9eb2b7749083c83a66988e62da45e}{LIyaw\+Default\+Value}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ad16e0ed5c907e6ae8c7846d33a26f796}{RGx\+Default\+Value}}~0.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ae702824d792edac413f7c92647d98a58}{RGy\+Default\+Value}}~0.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a32f62ae8da691dc1d80e27ae0fe66864}{RGz\+Default\+Value}}~0.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_aaf901f72c664b73897c98110c3248318}{RGyaw\+Default\+Value}}~0.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ac97a95300d1421a415b15e02cee3d806}{LambdaX}}~6.\+295
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a7be73050543da01007716ea7f6cbc424}{LambdaY}}~6.\+295
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ae91fa8862eb07499bf3bf8930befd11e}{LambdaZ}}~4.\+6697
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_af17cf138df64392be34c9138160d32ed}{MAX\+\_\+\+HORIZONTAL\+\_\+\+SPEED}}~17.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a6658f60cf267cb3ebb85791a92b59f7e}{MAX\+\_\+\+VERTICAL\+\_\+\+SPEED}}~1.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_a90f7cac8b5a6a9933579c83f7852552e}{MAX\+\_\+\+ROTATION\+\_\+\+SPEED}}~100.\+0
+\item 
+\#define \mbox{\hyperlink{pid__controller__twist_8h_ad96793de0cc60529a6b01040c0cd8033}{MASS}}~0.\+5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for PID Controller using velocity commands. 
+
+
+
+Definition in file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pid__controller__twist_8h_ad026d32ce8b90b65190195d63032285c}\label{pid__controller__twist_8h_ad026d32ce8b90b65190195d63032285c}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!DxDefaultValue@{DxDefaultValue}}
+\index{DxDefaultValue@{DxDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{DxDefaultValue}{DxDefaultValue}}
+{\footnotesize\ttfamily \#define Dx\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00011}{11}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_aef52e09a0de472dabbf45f59e0f55e83}\label{pid__controller__twist_8h_aef52e09a0de472dabbf45f59e0f55e83}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!DyawDefaultValue@{DyawDefaultValue}}
+\index{DyawDefaultValue@{DyawDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{DyawDefaultValue}{DyawDefaultValue}}
+{\footnotesize\ttfamily \#define Dyaw\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00014}{14}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ac93dfb6c80a6c7753d5f52ce7ae5acae}\label{pid__controller__twist_8h_ac93dfb6c80a6c7753d5f52ce7ae5acae}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!DyDefaultValue@{DyDefaultValue}}
+\index{DyDefaultValue@{DyDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{DyDefaultValue}{DyDefaultValue}}
+{\footnotesize\ttfamily \#define Dy\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00012}{12}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a68640c528a6cefeda5358c20d71b6f9d}\label{pid__controller__twist_8h_a68640c528a6cefeda5358c20d71b6f9d}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!DzDefaultValue@{DzDefaultValue}}
+\index{DzDefaultValue@{DzDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{DzDefaultValue}{DzDefaultValue}}
+{\footnotesize\ttfamily \#define Dz\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00013}{13}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a875448011a4abbe1c196a47e976486e2}\label{pid__controller__twist_8h_a875448011a4abbe1c196a47e976486e2}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!IxDefaultValue@{IxDefaultValue}}
+\index{IxDefaultValue@{IxDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{IxDefaultValue}{IxDefaultValue}}
+{\footnotesize\ttfamily \#define Ix\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00016}{16}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a2b1258d28392744e593f4e20e33803a0}\label{pid__controller__twist_8h_a2b1258d28392744e593f4e20e33803a0}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!IyawDefaultValue@{IyawDefaultValue}}
+\index{IyawDefaultValue@{IyawDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{IyawDefaultValue}{IyawDefaultValue}}
+{\footnotesize\ttfamily \#define Iyaw\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00019}{19}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ac8394d59b08eb81d0e6f6e08ca31e48c}\label{pid__controller__twist_8h_ac8394d59b08eb81d0e6f6e08ca31e48c}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!IyDefaultValue@{IyDefaultValue}}
+\index{IyDefaultValue@{IyDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{IyDefaultValue}{IyDefaultValue}}
+{\footnotesize\ttfamily \#define Iy\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00017}{17}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a994738f949c04279ce55c62d30afff9a}\label{pid__controller__twist_8h_a994738f949c04279ce55c62d30afff9a}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!IzDefaultValue@{IzDefaultValue}}
+\index{IzDefaultValue@{IzDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{IzDefaultValue}{IzDefaultValue}}
+{\footnotesize\ttfamily \#define Iz\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00018}{18}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ac97a95300d1421a415b15e02cee3d806}\label{pid__controller__twist_8h_ac97a95300d1421a415b15e02cee3d806}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LambdaX@{LambdaX}}
+\index{LambdaX@{LambdaX}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LambdaX}{LambdaX}}
+{\footnotesize\ttfamily \#define LambdaX~6.\+295}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00031}{31}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a7be73050543da01007716ea7f6cbc424}\label{pid__controller__twist_8h_a7be73050543da01007716ea7f6cbc424}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LambdaY@{LambdaY}}
+\index{LambdaY@{LambdaY}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LambdaY}{LambdaY}}
+{\footnotesize\ttfamily \#define LambdaY~6.\+295}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00032}{32}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ae91fa8862eb07499bf3bf8930befd11e}\label{pid__controller__twist_8h_ae91fa8862eb07499bf3bf8930befd11e}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LambdaZ@{LambdaZ}}
+\index{LambdaZ@{LambdaZ}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LambdaZ}{LambdaZ}}
+{\footnotesize\ttfamily \#define LambdaZ~4.\+6697}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00033}{33}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a84e60b41ddf71bb7d643bff84041d042}\label{pid__controller__twist_8h_a84e60b41ddf71bb7d643bff84041d042}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LIxDefaultValue@{LIxDefaultValue}}
+\index{LIxDefaultValue@{LIxDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LIxDefaultValue}{LIxDefaultValue}}
+{\footnotesize\ttfamily \#define LIx\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00021}{21}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a77b9eb2b7749083c83a66988e62da45e}\label{pid__controller__twist_8h_a77b9eb2b7749083c83a66988e62da45e}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LIyawDefaultValue@{LIyawDefaultValue}}
+\index{LIyawDefaultValue@{LIyawDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LIyawDefaultValue}{LIyawDefaultValue}}
+{\footnotesize\ttfamily \#define LIyaw\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00024}{24}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a98b1b21ca4446a351fc1e9dd50456b78}\label{pid__controller__twist_8h_a98b1b21ca4446a351fc1e9dd50456b78}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LIyDefaultValue@{LIyDefaultValue}}
+\index{LIyDefaultValue@{LIyDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LIyDefaultValue}{LIyDefaultValue}}
+{\footnotesize\ttfamily \#define LIy\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00022}{22}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ad718d2c44c7156b40ea441f2cea84b6d}\label{pid__controller__twist_8h_ad718d2c44c7156b40ea441f2cea84b6d}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!LIzDefaultValue@{LIzDefaultValue}}
+\index{LIzDefaultValue@{LIzDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{LIzDefaultValue}{LIzDefaultValue}}
+{\footnotesize\ttfamily \#define LIz\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00023}{23}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ad96793de0cc60529a6b01040c0cd8033}\label{pid__controller__twist_8h_ad96793de0cc60529a6b01040c0cd8033}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!MASS@{MASS}}
+\index{MASS@{MASS}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{MASS}{MASS}}
+{\footnotesize\ttfamily \#define MASS~0.\+5}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00039}{39}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_af17cf138df64392be34c9138160d32ed}\label{pid__controller__twist_8h_af17cf138df64392be34c9138160d32ed}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!MAX\_HORIZONTAL\_SPEED@{MAX\_HORIZONTAL\_SPEED}}
+\index{MAX\_HORIZONTAL\_SPEED@{MAX\_HORIZONTAL\_SPEED}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_HORIZONTAL\_SPEED}{MAX\_HORIZONTAL\_SPEED}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+HORIZONTAL\+\_\+\+SPEED~17.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00035}{35}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a90f7cac8b5a6a9933579c83f7852552e}\label{pid__controller__twist_8h_a90f7cac8b5a6a9933579c83f7852552e}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!MAX\_ROTATION\_SPEED@{MAX\_ROTATION\_SPEED}}
+\index{MAX\_ROTATION\_SPEED@{MAX\_ROTATION\_SPEED}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_ROTATION\_SPEED}{MAX\_ROTATION\_SPEED}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+ROTATION\+\_\+\+SPEED~100.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00037}{37}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a6658f60cf267cb3ebb85791a92b59f7e}\label{pid__controller__twist_8h_a6658f60cf267cb3ebb85791a92b59f7e}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!MAX\_VERTICAL\_SPEED@{MAX\_VERTICAL\_SPEED}}
+\index{MAX\_VERTICAL\_SPEED@{MAX\_VERTICAL\_SPEED}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_VERTICAL\_SPEED}{MAX\_VERTICAL\_SPEED}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+VERTICAL\+\_\+\+SPEED~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00036}{36}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a3dd348ce991235ccb39c5a19b3d93589}\label{pid__controller__twist_8h_a3dd348ce991235ccb39c5a19b3d93589}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!PxDefaultValue@{PxDefaultValue}}
+\index{PxDefaultValue@{PxDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{PxDefaultValue}{PxDefaultValue}}
+{\footnotesize\ttfamily \#define Px\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00006}{6}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a5501588d717ab46e7a7dd644409ff2bb}\label{pid__controller__twist_8h_a5501588d717ab46e7a7dd644409ff2bb}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!PyawDefaultValue@{PyawDefaultValue}}
+\index{PyawDefaultValue@{PyawDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{PyawDefaultValue}{PyawDefaultValue}}
+{\footnotesize\ttfamily \#define Pyaw\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00009}{9}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a8654e0a8831ffeaa4317e1be94b47fc8}\label{pid__controller__twist_8h_a8654e0a8831ffeaa4317e1be94b47fc8}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!PyDefaultValue@{PyDefaultValue}}
+\index{PyDefaultValue@{PyDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{PyDefaultValue}{PyDefaultValue}}
+{\footnotesize\ttfamily \#define Py\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00007}{7}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_accc76b47bca72fb2722615edd004276a}\label{pid__controller__twist_8h_accc76b47bca72fb2722615edd004276a}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!PzDefaultValue@{PzDefaultValue}}
+\index{PzDefaultValue@{PzDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{PzDefaultValue}{PzDefaultValue}}
+{\footnotesize\ttfamily \#define Pz\+Default\+Value~1.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00008}{8}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ad16e0ed5c907e6ae8c7846d33a26f796}\label{pid__controller__twist_8h_ad16e0ed5c907e6ae8c7846d33a26f796}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!RGxDefaultValue@{RGxDefaultValue}}
+\index{RGxDefaultValue@{RGxDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{RGxDefaultValue}{RGxDefaultValue}}
+{\footnotesize\ttfamily \#define RGx\+Default\+Value~0.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00026}{26}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_aaf901f72c664b73897c98110c3248318}\label{pid__controller__twist_8h_aaf901f72c664b73897c98110c3248318}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!RGyawDefaultValue@{RGyawDefaultValue}}
+\index{RGyawDefaultValue@{RGyawDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{RGyawDefaultValue}{RGyawDefaultValue}}
+{\footnotesize\ttfamily \#define RGyaw\+Default\+Value~0.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00029}{29}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_ae702824d792edac413f7c92647d98a58}\label{pid__controller__twist_8h_ae702824d792edac413f7c92647d98a58}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!RGyDefaultValue@{RGyDefaultValue}}
+\index{RGyDefaultValue@{RGyDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{RGyDefaultValue}{RGyDefaultValue}}
+{\footnotesize\ttfamily \#define RGy\+Default\+Value~0.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00027}{27}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+
+\mbox{\Hypertarget{pid__controller__twist_8h_a32f62ae8da691dc1d80e27ae0fe66864}\label{pid__controller__twist_8h_a32f62ae8da691dc1d80e27ae0fe66864}} 
+\index{pid\_controller\_twist.h@{pid\_controller\_twist.h}!RGzDefaultValue@{RGzDefaultValue}}
+\index{RGzDefaultValue@{RGzDefaultValue}!pid\_controller\_twist.h@{pid\_controller\_twist.h}}
+\doxysubsubsection{\texorpdfstring{RGzDefaultValue}{RGzDefaultValue}}
+{\footnotesize\ttfamily \#define RGz\+Default\+Value~0.\+0}
+
+
+
+Definition at line \mbox{\hyperlink{pid__controller__twist_8h_source_l00028}{28}} of file \mbox{\hyperlink{pid__controller__twist_8h_source}{pid\+\_\+controller\+\_\+twist.\+h}}.
+

@@ -1,3 +1,20 @@
+/// @file data_to_csv.cpp
+/// @brief Node file to save the test results to a CSV file.
+/// 
+/// This node requires the following parameters.
+/// @param Topics/Command_Trajectory Topic used to send and receive the command trajectory between nodes.
+/// @param Topics/Pose Topic used to receive the drone position data.
+/// @param Topics/CMD_Vel Topic used to send the velocity commands to the drone.
+/// @param Topics/CSV_Begin Topic used to communicate when the trajectory begins and the *data_to_csv* node should start saving the data.
+/// @param Topics/CSV_End Topic used to communicate when the trajectory begins and the *data_to_csv* node should stop saving the data.
+/// @param Waypoint/MarginTime Time margin to let the drone reach the final position before landing.
+/// @param Dir The directory where the CSV files are saved.
+/// @param /Subfolder The subfolder where the CSV file is located.
+/// 
+/// It is recommended to pass some of the parameters using the following YAML files.
+/// - topics.yaml
+/// - waypoint.yaml
+
 #include "data_to_csv.h"
 
 namespace bebop_controller {
@@ -8,8 +25,10 @@ namespace bebop_controller {
         drone_pose.orientation.x = drone_pose.orientation.y = drone_pose.orientation.z = 0;
         reference_pose.position.x = reference_pose.position.y = reference_pose.position.z = 0;
         reference_pose.orientation.x = reference_pose.orientation.y = reference_pose.orientation.z = 0;
+        odometry.position.x = odometry.position.y = odometry.position.z = 0;
+        odometry.velocity.x = odometry.velocity.y = odometry.velocity.z = 0;
         CSV_File.open(parameters.File.c_str());
-        CSV_File << "Time,x_ref,y_ref,z_ref,yaw_ref,x,y,z,yaw,v_x,v_y,v_z,v_yaw\n";
+        CSV_File << "Time,x_ref,y_ref,z_ref,yaw_ref,x,y,z,yaw,v_x,v_y,v_z,v_yaw,pos_x,pos_y,pos_z,vel_x,vel_y,vel_z\n";
         drone_pose_sub = nh.subscribe(parameters.Topic_Drone_Pose, 1, 
                                                       &DataToCSV::Odometry_CB, this);
         reference_pose_sub = nh.subscribe(parameters.Topic_Reference_Pose, 1, 
@@ -19,6 +38,8 @@ namespace bebop_controller {
         csv_begin = nh.subscribe(parameters.Topic_CSV_Begin, 1, &DataToCSV::Begin_CB, this);
         csv_end = nh.subscribe(parameters.Topic_CSV_End, 1, &DataToCSV::Stop_CB, this);
         timer = nh.createTimer(ros::Duration(0.01), &DataToCSV::Timer_CB, this);
+        velocities_sub = nh.subscribe(parameters.Topic_Velocities, 1, 
+                                                      &DataToCSV::Drone_CB, this);
     }
     
     DataToCSV::~DataToCSV() {}
@@ -80,7 +101,13 @@ namespace bebop_controller {
                         << cmd_vel.x << ","
                         << cmd_vel.y << ","
                         << cmd_vel.z << ","
-                        << cmd_vel.yaw << "\n";
+                        << cmd_vel.yaw << ","
+                        << odometry.position.x << ","
+                        << odometry.position.y << ","
+                        << odometry.position.z << ","
+                        << odometry.velocity.x << ","
+                        << odometry.velocity.y << ","
+                        << odometry.velocity.z << "\n";
         }
     }
 
@@ -89,6 +116,15 @@ namespace bebop_controller {
         cmd_vel.y = cmd_vel_msg.linear.y;
         cmd_vel.z = cmd_vel_msg.linear.z;
         cmd_vel.yaw = cmd_vel_msg.angular.z;
+    }
+
+    void DataToCSV::Drone_CB(const nav_msgs::OdometryConstPtr& odom_msg) {
+        odometry.position.x = odom_msg->pose.pose.position.x;
+        odometry.position.y = odom_msg->pose.pose.position.y;
+        odometry.position.z = odom_msg->pose.pose.position.z;
+        odometry.velocity.x = odom_msg->twist.twist.linear.x;
+        odometry.velocity.y = odom_msg->twist.twist.linear.y;
+        odometry.velocity.z = odom_msg->twist.twist.linear.z;
     }
 
 }
@@ -106,6 +142,7 @@ int main(int argc, char** argv){
     ros::param::get("~Waypoint/MarginTime", parameters.Margin_Time);
     ros::param::get("~Dir", Path);
     ros::param::get("/Subfolder", DateAndTime);
+    ros::param::get("~Topics/Velocities", parameters.Topic_Velocities);
     DateAndTime.pop_back();
     FullPath = Path + DateAndTime;
     mkdir(FullPath.c_str(), 0777);

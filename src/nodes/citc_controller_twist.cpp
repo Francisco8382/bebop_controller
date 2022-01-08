@@ -1,3 +1,57 @@
+/// @file citc_controller_twist.cpp
+/// @brief Node file for CITC Controller using velocity commands.
+/// 
+/// This node requires the following parameters.
+/// @param Gains/K1x Value of @f${k_1}_x@f$
+/// @param Gains/K1y Value of @f${k_1}_y@f$
+/// @param Gains/K1z Value of @f${k_1}_z@f$
+/// @param Gains/K1yaw Value of @f${k_1}_\psi@f$
+/// @param Gains/K2x Value of @f${k_2s}_x@f$
+/// @param Gains/K2y Value of @f${k_2}_y@f$
+/// @param Gains/K2z Value of @f${k_2}_z@f$
+/// @param Gains/K2yaw Value of @f${k_2}_\psi@f$
+/// @param Gains/K3x Value of @f${k_3}_x@f$
+/// @param Gains/K3y Value of @f${k_3}_y@f$
+/// @param Gains/K3z Value of @f${k_3}_z@f$
+/// @param Gains/K3yaw Value of @f${k_3}_\psi@f$
+/// @param Gains/K4x Value of @f${k_4}_x@f$
+/// @param Gains/K4y Value of @f${k_4}_y@f$
+/// @param Gains/K4z Value of @f${k_4}_z@f$
+/// @param Gains/K4yaw Value of @f${k_4}_\psi@f$
+/// @param Reference_Gains/X Gain for @f$x@f$ coordinate used to consider the reference acceleration of the path.
+/// @param Reference_Gains/Y Gain for @f$y@f$ coordinate used to consider the reference acceleration of the path.
+/// @param Reference_Gains/Z Gain for @f$z@f$ coordinate used to consider the reference acceleration of the path.
+/// @param Lambda/X Variable used to limit control actions. It is not recommended to change.
+/// @param Lambda/Y Variable used to limit control actions. It is not recommended to change.
+/// @param Lambda/Z Variable used to limit control actions. It is not recommended to change.
+/// @param Mass Bebop 2 drone mass.
+/// @param Sigma Value of @f$ \sigma @f$
+/// @param Disable_Commands Variable used to run the controller without sending velocity commands. This can be useful to check if the safe zone is working properly.
+/// @param Topics/Command_Trajectory Topic used to send and receive the command trajectory between nodes.
+/// @param Topics/Pose Topic used to receive the drone position data.
+/// @param Topics/CMD_Vel Topic used to send the velocity commands to the drone.
+/// @param Topics/TafeOff Topic used to send the takeoff command to the drone.
+/// @param Topics/Land Topic used to send the land command to the drone.
+/// @param Topics/CSV_Begin Topic used to communicate when the trajectory begins and the *data_to_csv* node should start saving the data.
+/// @param Topics/CSV_End Topic used to communicate when the trajectory begins and the *data_to_csv* node should stop saving the data.
+/// @param Normalize/Max_Horizontal_Speed Maximum horizontal speed. Used to normalize the speed in the @f$x@f$ and @f$y@f$ coordinates.
+/// @param Normalize/Max_Vertical_Speed Maximum vertical speed. Used to normalize the control action in the @f$z@f$ coordinate
+/// @param Normalize/Max_Rotation_Speed Maximum rotation speed. Used to normalize the yaw angle control action.
+/// @param Safe_Zone/X Maximum position value allowed in the @f$x@f$ coordinate. If the drone reaches a position that exceeds this value, the drone will land.
+/// @param Safe_Zone/Y Maximum position value allowed in the @f$y@f$ coordinate. If the drone reaches a position that exceeds this value, the drone will land.
+/// @param Safe_Zone/Z Maximum position value allowed in the @f$z@f$ coordinate. If the drone reaches a position that exceeds this value, the drone will land.
+/// @param Max_Speed/X Maximum velocity allowed in @f$x@f$ coordinate.
+/// @param Max_Speed/Y Maximum velocity allowed in @f$x@f$ coordinate.
+/// @param Max_Speed/Z Maximum velocity allowed in @f$x@f$ coordinate.
+/// @param Max_Speed/Yaw Maximum angular velocity allowed for yaw angle.
+/// 
+/// It is recommended to pass the parameters using the following YAML files.
+/// - citc_controller_twist.yaml
+/// - topics.yaml
+/// - normalize_twist.yaml
+/// - safe_zone.yaml
+/// - max_speed.yaml
+
 #include "citc_controller_twist.h"
 
 namespace bebop_controller {

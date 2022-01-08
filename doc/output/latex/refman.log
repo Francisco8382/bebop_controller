@@ -1,0 +1,2069 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.7)  7 JAN 2022 17:48
+entering extended mode
+**./refman.tex
+(refman.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> xparse <2020-03-03>
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array-2016-
+10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks15
+\extratabsurround=\skip49
+\backup@length=\skip50
+))
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (doxygen.sty
+Package: doxygen 
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count188
+\calc@Bcount=\count189
+\calc@Adimen=\dimen141
+\calc@Bdimen=\dimen142
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count190
+\calc@Cskip=\skip53
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count191
+\float@exts=\toks16
+\float@box=\box47
+\@float@everytoks=\toks17
+\@floatcapt=\box48
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\verbatim.st
+y
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks18
+\verbatim@line=\toks19
+\verbatim@in@stream=\read2
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks20
+\minrowclearance=\skip54
+)
+\rownum=\count192
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count193
+\LTcapwidth=\dimen143
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count194
+\LT@rows=\count195
+\c@LT@tables=\count196
+\c@LT@chunks=\count197
+\LT@p@ftn=\toks21
+) (tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box53
+\sift@deathcycles=\count198
+\@vwid@loff=\dimen144
+\@vwid@roff=\dimen145
+)
+\c@taburow=\count199
+\tabu@nbcols=\count266
+\tabu@cnt=\count267
+\tabu@Xcol=\count268
+\tabu@alloc=\count269
+\tabu@nested=\count270
+\tabu@target=\dimen146
+\tabu@spreadtarget=\dimen147
+\tabu@naturalX=\dimen148
+\tabucolX=\dimen149
+\tabu@Xsum=\dimen150
+\extrarowdepth=\dimen151
+\abovetabulinesep=\dimen152
+\belowtabulinesep=\dimen153
+\tabustrutrule=\dimen154
+\tabu@thebody=\toks22
+\tabu@footnotes=\toks23
+\tabu@box=\box54
+\tabu@arstrutbox=\box55
+\tabu@hleads=\box56
+\tabu@vleads=\box57
+\tabu@cellskip=\skip59
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+\FV@CodeLineNo=\count271
+\FV@InFile=\read3
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count272
+\FV@StepNumber=\count273
+\FV@OutFile=\write3
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\tabularx.st
+y
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count274
+\TX@ftn=\toks25
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\multicol.st
+y
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count275
+\mult@box=\box59
+\multicol@leftmargin=\dimen160
+\c@unbalance=\count276
+\c@collectmore=\count277
+\doublecol@number=\count278
+\multicoltolerance=\count279
+\multicolpretolerance=\count280
+\full@width=\dimen161
+\page@free=\dimen162
+\premulticols=\dimen163
+\postmulticols=\dimen164
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box60
+\last@line=\box61
+\maxbalancingoverflow=\dimen165
+\mult@rightbox=\box62
+\mult@grightbox=\box63
+\mult@gfirstbox=\box64
+\mult@firstbox=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\c@minrows=\count281
+\c@columnbadness=\count282
+\c@finalcolumnbadness=\count283
+\last@try=\dimen166
+\multicolovershoot=\dimen167
+\multicolundershoot=\dimen168
+\mult@nat@firstbox=\box103
+\colbreak@box=\box104
+\mc@col@check@num=\count284
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count285
+\multirow@dima=\skip63
+\bigstrutjot=\dimen169
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hanging\hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip64
+\h@ngfstopwd=\skip65
+\h@ngquotewd=\skip66
+\h@ngdquotewd=\skip67
+\h@ngquerywd=\skip68
+\h@ngexclwd=\skip69
+\h@ngcolonwd=\skip70
+\h@ngscolonwd=\skip71
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+)
+\XKV@depth=\count286
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box105
+)
+\tc@llx=\dimen172
+\tc@lly=\dimen173
+\tc@urx=\dimen174
+\tc@ury=\dimen175
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen176
+\adjbox@Height=\dimen177
+\adjbox@Depth=\dimen178
+\adjbox@Totalheight=\dimen179
+\adjbox@pwidth=\dimen180
+\adjbox@pheight=\dimen181
+\adjbox@pdepth=\dimen182
+\adjbox@ptotalheight=\dimen183
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count287
+)) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/stackengine\stackengine
+.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count288
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/listofitems\listofitems
+.sty
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/listofitems\listofite
+ms.tex
+\loi_cnt_foreach_nest=\count289
+\loi_nestcnt=\count290
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count291
+\@boxshift=\skip72
+\stack@tmplength=\skip73
+\temp@stkl=\skip74
+\@stackedboxwidth=\skip75
+\@addedbox=\box106
+\@anchorbox=\box107
+\@insetbox=\box108
+\se@backgroundbox=\box109
+\stackedbox=\box110
+\@centerbox=\box111
+\c@ROWcellindex@=\count292
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip76
+\enit@outerparindent=\dimen184
+\enit@toks=\toks29
+\enit@inbox=\box112
+\enit@count@id=\count293
+\enitdp@description=\count294
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/alphalph\alphalph.sty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box113
+\UL@hyphenbox=\box114
+\UL@skip=\skip77
+\UL@hook=\toks30
+\UL@height=\dimen185
+\UL@pe=\count295
+\UL@pixel=\dimen186
+\ULC@box=\box115
+Package: ulem 2019/11/18
+\ULdepth=\dimen187
+)
+\xrefbox=\box116
+\xreflength=\skip78
+\CodeWidthChar=\skip79
+\CodeHeightChar=\skip80
+\DoxyCodeWidth=\skip81
+\c@DoxyEnumeratei=\count296
+\c@DoxyEnumerateii=\count297
+\c@DoxyEnumerateiii=\count298
+\c@DoxyEnumerateiv=\count299
+\c@DoxyEnumeratev=\count300
+\c@DoxyEnumeratevi=\count301
+\c@DoxyEnumeratevii=\count302
+\c@DoxyEnumerateviii=\count303
+\c@DoxyEnumerateix=\count304
+\c@DoxyEnumeratex=\count305
+\c@DoxyEnumeratexi=\count306
+\c@DoxyEnumeratexii=\count307
+\enitdp@DoxyEnumerate=\count308
+\enitdp@DoxyItemize=\count309
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count310
+\Gm@cntv=\count311
+\c@Gm@tempcnt=\count312
+\Gm@bindingoffset=\dimen188
+\Gm@wd@mp=\dimen189
+\Gm@odd@mp=\dimen190
+\Gm@even@mp=\dimen191
+\Gm@layoutwidth=\dimen192
+\Gm@layoutheight=\dimen193
+\Gm@layouthoffset=\dimen194
+\Gm@layoutvoffset=\dimen195
+\Gm@dimlist=\toks33
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip82
+\f@nch@O@elh=\skip83
+\f@nch@O@erh=\skip84
+\f@nch@O@olh=\skip85
+\f@nch@O@orh=\skip86
+\f@nch@O@elf=\skip87
+\f@nch@O@erf=\skip88
+\f@nch@O@olf=\skip89
+\f@nch@O@orf=\skip90
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip91
+\bibsep=\skip92
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count313
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip93
+\cftbeforetoctitleskip=\skip94
+\cftaftertoctitleskip=\skip95
+\cftbeforepartskip=\skip96
+\cftpartnumwidth=\skip97
+\cftpartindent=\skip98
+\cftbeforechapskip=\skip99
+\cftchapindent=\skip100
+\cftchapnumwidth=\skip101
+\cftbeforesecskip=\skip102
+\cftsecindent=\skip103
+\cftsecnumwidth=\skip104
+\cftbeforesubsecskip=\skip105
+\cftsubsecindent=\skip106
+\cftsubsecnumwidth=\skip107
+\cftbeforesubsubsecskip=\skip108
+\cftsubsubsecindent=\skip109
+\cftsubsubsecnumwidth=\skip110
+\cftbeforeparaskip=\skip111
+\cftparaindent=\skip112
+\cftparanumwidth=\skip113
+\cftbeforesubparaskip=\skip114
+\cftsubparaindent=\skip115
+\cftsubparanumwidth=\skip116
+\cftbeforeloftitleskip=\skip117
+\cftafterloftitleskip=\skip118
+\cftbeforefigskip=\skip119
+\cftfigindent=\skip120
+\cftfignumwidth=\skip121
+\c@lofdepth=\count314
+\c@lotdepth=\count315
+\cftbeforelottitleskip=\skip122
+\cftafterlottitleskip=\skip123
+\cftbeforetabskip=\skip124
+\cfttabindent=\skip125
+\cfttabnumwidth=\skip126
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/newunicodechar\newunico
+dechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+
+Package newunicodechar Warning: Redefining Unicode character on input line 116.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 117.
+
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen196
+\Hy@linkcounter=\count316
+\Hy@pagecounter=\count317
+ (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
+atches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count318
+ (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing ON on input line 4210.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\backref.sty
+Package: backref 2021/02/04 v1.41 Bibliographical back referencing
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+\c@Hy@tempcnt=\count319
+ (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen197
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count320
+\Field@Width=\dimen198
+\Fld@charsize=\dimen199
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing ON on input line 6088.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count321
+\c@Item=\count322
+\c@Hfootnote=\count323
+)
+Package hyperref Info: Driver: hpdftex.
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+\Fld@listcount=\count324
+\c@bookmark@seq@number=\count325
+\Hy@SectionHShift=\skip127
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 136.
+Package hyperref Info: Option `unicode' set `true' on input line 136.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen256
+\captionmargin@=\dimen257
+\captionwidth=\dimen258
+\caption@tempdima=\dimen259
+\caption@indent=\dimen260
+\caption@parindent=\dimen261
+\caption@hangindent=\dimen262
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count326
+\c@continuedfloat=\count327
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/etoc\etoc.sty
+Package: etoc 2021/09/23 v1.09e Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks34
+\c@etoc@tocid=\count328
+\c@etoc@tocdepth=\count329
+\etoc@framed@titlebox=\box117
+\etoc@framed@contentsbox=\box118
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
+2.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 152.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count330
+\l__pdf_internal_box=\box119
+) (refman.aux
+
+LaTeX Warning: Label `classbebop__controller_1_1_c_i_t_c_controller_a106b284ace
+b910c97b4bc58f69c50277' multiply defined.
+
+
+LaTeX Warning: Label `classbebop__controller_1_1_p_i_d_controller_a0119d624964d
+0ed521afc78a128cc225' multiply defined.
+
+)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count331
+\scratchdimen=\dimen263
+\scratchbox=\box120
+\nofMPsegments=\count332
+\nofMParguments=\count333
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen264
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
+\everyMPtoPDFconversion=\toks36
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 152.
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count337
+)
+LaTeX Info: Redefining \ref on input line 152.
+LaTeX Info: Redefining \pageref on input line 152.
+LaTeX Info: Redefining \nameref on input line 152.
+ (refman.out) (refman.out)
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+Package backref Info: ** backref set up for natbib ** on input line 152.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\Etoc@tf=\read4
+Package hyperref Info: Option `pageanchor' set `false' on input line 160.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 160.
+
+Package hyperref Info: Option `unicode' set `true' on input line 160.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 165.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 167.
+ [1
+
+
+{C:/Users/franc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 173.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 173
+.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 173
+.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 17
+3.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 173.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 173.
+
+[1] [2]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 173.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
+3.
+ (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [3] [4] [5] [6]
+Overfull \hbox (25.01645pt too wide) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.4 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]c
+ontroller/src/bebop[]_[]controller/include/bebop[]_[]controller/common.h 
+ []
+
+
+Overfull \hbox (25.61946pt too wide) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.6 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]c
+ontroller/src/bebop[]_[]controller/include/bebop[]_[]controller/waypoint.h 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.8 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]c
+ontroller/src/bebop[]_[]controller/launch/citc[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.10 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/citc[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.12 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/gazebo.launch File 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.14 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/pid[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.16 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/pid[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.18 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/proportional[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.20 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/square[]_[]root[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.22 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/launch/vrpn[]_[]client[]_[] 
+ []
+
+[7]
+Underfull \hbox (badness 3601) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.24 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/citc[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 3601) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.26 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/citc[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.28 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/max[]_[]speed.yaml 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.30 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/normalize[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.32 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/normalize[]_[] 
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.34 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/pid[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.36 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/pid[]_[]controller[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.38 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/proportional[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.40 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/safe[]_[]zone.yaml 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.42 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/square[]_[]root[]_[] 
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.44 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/resource/topics.yaml File 
+ []
+
+[8] [9] [10]
+Underfull \hbox (badness 5288) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.66 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/data[]_[]to[]_[]csv.cpp 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.68 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/data[]_[]to[]_[]csv.h 
+ []
+
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.78 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/proportional[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.80 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/proportional[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.82 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/sinusoidal.cpp 
+ []
+
+
+Underfull \hbox (badness 808) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.84 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/sinusoidal.h File 
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.86 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/square[]_[]root[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+ [][] [][]\T1/phv/m/n/10 12.88 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]
+controller/src/bebop[]_[]controller/src/nodes/square[]_[]root[]_[] 
+ []
+
+[14]
+Package hyperref Info: Option `pageanchor' set `true' on input line 176.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 178.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 178.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 178.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 178.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 178.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 178.
+(index.tex) [1
+
+
+] [2
+
+]
+Chapter 2.
+(installation.tex) [3] [4
+
+]
+Chapter 3.
+(ros_nodes.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 7
+.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 7.
+)
+[5] [6
+
+]
+Chapter 4.
+(launch_files.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 28.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 28.
+) [7] [8
+
+]
+Chapter 5.
+(yaml_files.tex) [9] [10
+
+]
+Chapter 6.
+(namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [11] [12
+
+]
+Chapter 7.
+(hierarchy.tex) [13] [14
+
+]
+Chapter 8.
+(annotated.tex) [15] [16
+
+]
+Chapter 9.
+(files.tex
+Overfull \hbox (31.39224pt too wide) in paragraph at lines 3--3
+ [][] \T1/phv/m/n/10 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]controller
+/src/bebop[]_[]controller/include/bebop[]_[]controller/[]  
+ []
+
+[17]) [18]
+Chapter 10.
+(namespacebebop__controller.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+ [19
+
+]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 70.
+
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
+
+[20]
+Underfull \hbox (badness 10000) detected at line 101
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 113.
+
+Underfull \hbox (badness 10000) detected at line 136
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 149
+[][][]
+ []
+
+[21]
+Underfull \hbox (badness 10000) detected at line 162
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 180
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 193
+[][][]
+ []
+
+) (namespacegazebo.tex [22]) (namespaceplot.tex
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 3
+6.
+
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+[23]) [24]
+Chapter 11.
+(classbebop__controller_1_1_base_controller.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_base_controller.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classbebop__controller_1_1_base_controller.pdf>
+<classbebop__controller_1_1_base_controller.pdf, id=3236, 501.875pt x 27.10126p
+t>
+File: classbebop__controller_1_1_base_controller.pdf Graphic file (type pdf)
+<use classbebop__controller_1_1_base_controller.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_base_controller.pdf  used o
+n input line 10.
+(pdftex.def)             Requested size: 398.22292pt x 21.5028pt.
+ [25
+
+] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+|  \T1/pcr/m/n/8 const trajectory[]_[]msgs[]::[]Multi[]DOFJoint[]Trajectory[]Co
+nst[]Ptr & \T1/pcr/m/sl/8 trajectory[]_[]reference[]_[]msg
+ []
+
+[28] [29] [30] [31] [32]
+Overfull \hbox (19.21605pt too wide) in paragraph at lines 566--567
+[]\T1/phv/m/n/10 C[]:/[]Users/franc/[]Desktop/[]Ubuntu/bebop[]_[]controller/src
+/bebop[]_[]controller/include/bebop[]_[]controller/[] 
+ []
+
+) (classbebop__controller_1_1_c_i_t_c_controller.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_c_i_t_c_controller.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+ <./classbebop__controller_1_1_c_i_t_c_controller.pdf>
+<classbebop__controller_1_1_c_i_t_c_controller.pdf, id=3517, 501.875pt x 98.367
+5pt>
+File: classbebop__controller_1_1_c_i_t_c_controller.pdf Graphic file (type pdf)
+
+<use classbebop__controller_1_1_c_i_t_c_controller.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_c_i_t_c_controller.pdf  use
+d on input line 10.
+(pdftex.def)             Requested size: 290.32956pt x 56.9055pt.
+ [33]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 34.
+)
+(structbebop__controller_1_1_command___velocities.tex [34pdfTeX warning (ext4):
+ destination with the same identifier (name{classbebop__controller_1_1_c_i_t_c_
+controller_a106b284aceb910c97b4bc5\ETC.}) has been already used, duplicate igno
+red
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.10 {\ttfamily \#
+                  include $<$common.\+h$>$}] [35])
+(classbebop__controller_1_1_data_to_c_s_v.tex [36])
+(structbebop__controller_1_1_data_to_c_s_v_parameters.tex [37] [38])
+(structbebop__controller_1_1_normalize.tex [39])
+(classbebop__controller_1_1_p_i_d_controller.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_p_i_d_controller.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classbebop__controller_1_1_p_i_d_controller.pdf>
+<classbebop__controller_1_1_p_i_d_controller.pdf, id=3699, 501.875pt x 98.3675p
+t>
+File: classbebop__controller_1_1_p_i_d_controller.pdf Graphic file (type pdf)
+<use classbebop__controller_1_1_p_i_d_controller.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_p_i_d_controller.pdf  used 
+on input line 10.
+(pdftex.def)             Requested size: 290.32956pt x 56.9055pt.
+ [40])
+(classplot_1_1_plots.tex [41pdfTeX warning (ext4): destination with the same id
+entifier (name{classbebop__controller_1_1_p_i_d_controller_a0119d624964d0ed521a
+fc78a\ETC.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.32 
+     ]) (classbebop__controller_1_1_proportional_controller.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_proportional_contro
+ller.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
+lowed
+ <./classbebop__controller_1_1_proportional_controller.pdf>
+<classbebop__controller_1_1_proportional_controller.pdf, id=3760, 501.875pt x 1
+62.6075pt>
+File: classbebop__controller_1_1_proportional_controller.pdf Graphic file (type
+ pdf)
+<use classbebop__controller_1_1_proportional_controller.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_proportional_controller.pdf
+  used on input line 10.
+(pdftex.def)             Requested size: 175.6359pt x 56.9055pt.
+ [42])
+(classbebop__controller_1_1_sinusoidal.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_sinusoidal.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classbebop__controller_1_1_sinusoidal.pdf>
+<classbebop__controller_1_1_sinusoidal.pdf, id=3781, 501.875pt x 223.83624pt>
+File: classbebop__controller_1_1_sinusoidal.pdf Graphic file (type pdf)
+<use classbebop__controller_1_1_sinusoidal.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_sinusoidal.pdf  used on inp
+ut line 10.
+(pdftex.def)             Requested size: 127.58969pt x 56.9055pt.
+ [43])
+(classgazebo_1_1_sphinx_publisher.tex [44] [45])
+(classbebop__controller_1_1_square_root_controller.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_square_root_control
+ler.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
+owed
+ <./classbebop__controller_1_1_square_root_controller.pdf>
+<classbebop__controller_1_1_square_root_controller.pdf, id=3869, 501.875pt x 16
+5.61874pt>
+File: classbebop__controller_1_1_square_root_controller.pdf Graphic file (type 
+pdf)
+<use classbebop__controller_1_1_square_root_controller.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_square_root_controller.pdf 
+ used on input line 10.
+(pdftex.def)             Requested size: 172.43486pt x 56.9055pt.
+ [46])
+(structbebop__controller_1_1_state.tex [47] [48])
+(struct_trajectory_parameters.tex [49])
+(structbebop__controller_1_1_vector3.tex [50])
+(structbebop__controller_1_1_vector4.tex [51])
+(classbebop__controller_1_1_waypoint.tex
+
+pdfTeX warning: pdflatex (file ./classbebop__controller_1_1_waypoint.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classbebop__controller_1_1_waypoint.pdf>
+<classbebop__controller_1_1_waypoint.pdf, id=4034, 501.875pt x 223.83624pt>
+File: classbebop__controller_1_1_waypoint.pdf Graphic file (type pdf)
+<use classbebop__controller_1_1_waypoint.pdf>
+Package pdftex.def Info: classbebop__controller_1_1_waypoint.pdf  used on input
+ line 10.
+(pdftex.def)             Requested size: 127.58969pt x 56.9055pt.
+ [52] [53] [54] [55] [56])
+(struct_waypoint_parameters.tex [57]) [58]
+Chapter 12.
+(documentation_8md.tex) (base__controller_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[59
+
+] [60]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[61] [62]) (base__controller_8h_source.tex [63]) (common_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--17
+
+ []
+
+[64]
+Underfull \hbox (badness 756) in paragraph at lines 44--45
+\T1/phv/m/n/10 void [] (const ros[]::[]Node[]Handle &nh, const std[]::string &k
+ey, const T
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 87
+[][][]
+ []
+
+) (common_8h_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[65] [66]) (waypoint_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[67]) (waypoint_8h_source.tex [68]) (citc__controller__angles_8launch.tex)
+(citc__controller__angles_8launch_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[69]) (citc__controller__twist_8launch.tex)
+(citc__controller__twist_8launch_source.tex [70]) (gazebo_8launch.tex)
+(gazebo_8launch_source.tex) (pid__controller__angles_8launch.tex)
+(pid__controller__angles_8launch_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[71]) (pid__controller__twist_8launch.tex)
+(pid__controller__twist_8launch_source.tex [72])
+(proportional__controller_8launch.tex)
+(proportional__controller_8launch_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[73]) (square__root__controller_8launch.tex)
+(square__root__controller_8launch_source.tex [74])
+(vrpn__client__ros_8launch.tex) (vrpn__client__ros_8launch_source.tex)
+(citc__controller__angles_8yaml.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[75]) (citc__controller__angles_8yaml_source.tex)
+(citc__controller__twist_8yaml.tex) (citc__controller__twist_8yaml_source.tex
+[76]) (max__speed_8yaml.tex) (max__speed_8yaml_source.tex)
+(normalize__angles_8yaml.tex) (normalize__angles_8yaml_source.tex [77])
+(normalize__twist_8yaml.tex) (normalize__twist_8yaml_source.tex)
+(pid__controller__angles_8yaml.tex) (pid__controller__angles_8yaml_source.tex
+[78]) (pid__controller__twist_8yaml.tex)
+(pid__controller__twist_8yaml_source.tex) (proportional__controller_8yaml.tex
+[79]) (proportional__controller_8yaml_source.tex) (safe__zone_8yaml.tex)
+(safe__zone_8yaml_source.tex) (square__root__controller_8yaml.tex)
+(square__root__controller_8yaml_source.tex [80]) (topics_8yaml.tex)
+(topics_8yaml_source.tex) (trajectory_8yaml.tex) (trajectory_8yaml_source.tex
+[81]) (waypoint_8yaml.tex) (waypoint_8yaml_source.tex) (gazebo_8py.tex [82])
+(gazebo_8py_source.tex [83]) (plot_8py.tex [84]) (plot_8py_source.tex [85])
+(base__controller_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (base__controller_8cpp_source.tex [86] [87] [88]) (waypoint_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[89]) (waypoint_8cpp_source.tex) (citc__controller__angles_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[90]) (citc__controller__angles_8cpp_source.tex [91] [92])
+(citc__controller__angles_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[93] [94]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[95] [96]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[97]) (citc__controller__angles_8h_source.tex [98])
+(citc__controller__twist_8cpp.tex [99]
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (citc__controller__twist_8cpp_source.tex [100] [101])
+(citc__controller__twist_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[102]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[103] [104]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[105] [106]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[107]) (citc__controller__twist_8h_source.tex [108]) (data__to__csv_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (data__to__csv_8cpp_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[109] [110]) (data__to__csv_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[111]) (data__to__csv_8h_source.tex [112]) (pid__controller__angles_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (pid__controller__angles_8cpp_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[113] [114]) (pid__controller__angles_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[115] [116]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[117] [118]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[119]) (pid__controller__angles_8h_source.tex [120])
+(pid__controller__twist_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[121]) (pid__controller__twist_8cpp_source.tex [122])
+(pid__controller__twist_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[123] [124]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[125] [126]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[127] [128]) (pid__controller__twist_8h_source.tex [129])
+(proportional__controller_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (proportional__controller_8cpp_source.tex [130])
+(proportional__controller_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[131] [132]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[133]) (proportional__controller_8h_source.tex) (sinusoidal_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[134]) (sinusoidal_8cpp_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[135]) (sinusoidal_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[136]) (sinusoidal_8h_source.tex) (square__root__controller_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[137]) (square__root__controller_8cpp_source.tex [138])
+(square__root__controller_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[139] [140]) (square__root__controller_8h_source.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.97194pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.97194pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-21.97194pt}.
+
+[141]) [142] (refman.ind [143
+
+
+
+]
+Overfull \hbox (229.33997pt too wide) in paragraph at lines 205--207
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/include/bebop_controller/base_controller.h,
+ []
+
+
+Overfull \hbox (202.77261pt too wide) in paragraph at lines 207--209
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/include/bebop_controller/common.h,
+ []
+
+
+Overfull \hbox (203.37563pt too wide) in paragraph at lines 209--211
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/include/bebop_controller/waypoint.h,
+ []
+
+
+Overfull \hbox (205.13971pt too wide) in paragraph at lines 211--213
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/citc_controller_angles.launch,
+ []
+
+
+Overfull \hbox (196.76071pt too wide) in paragraph at lines 213--215
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/citc_controller_twist.launch,
+ []
+
+
+Overfull \hbox (147.27087pt too wide) in paragraph at lines 215--217
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/gazebo.launch,
+ []
+
+
+Overfull \hbox (203.64569pt too wide) in paragraph at lines 217--219
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/pid_controller_angles.launch,
+ []
+
+
+Overfull \hbox (195.2667pt too wide) in paragraph at lines 219--221
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/pid_controller_twist.launch,
+ []
+
+
+Overfull \hbox (207.6863pt too wide) in paragraph at lines 221--223
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/proportional_controller.launch,
+ []
+
+
+Overfull \hbox (207.83044pt too wide) in paragraph at lines 223--225
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/square_root_controller.launch,
+ []
+
+
+Overfull \hbox (179.40015pt too wide) in paragraph at lines 225--227
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/launch/vrpn_client_ros.launch,
+ []
+
+[144]
+Overfull \hbox (205.94081pt too wide) in paragraph at lines 227--229
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/citc_controller_angles.yaml,
+ []
+
+
+Overfull \hbox (197.56181pt too wide) in paragraph at lines 229--231
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/citc_controller_twist.yaml,
+ []
+
+
+Overfull \hbox (165.5676pt too wide) in paragraph at lines 231--233
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/max_speed.yaml,
+ []
+
+
+Overfull \hbox (189.52527pt too wide) in paragraph at lines 233--235
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/normalize_angles.yaml,
+ []
+
+
+Overfull \hbox (181.14627pt too wide) in paragraph at lines 235--237
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/normalize_twist.yaml,
+ []
+
+
+Overfull \hbox (204.4468pt too wide) in paragraph at lines 237--239
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/pid_controller_angles.yaml,
+ []
+
+
+Overfull \hbox (196.0678pt too wide) in paragraph at lines 239--241
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/pid_controller_twist.yaml,
+ []
+
+
+Overfull \hbox (208.4874pt too wide) in paragraph at lines 241--243
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/proportional_controller.yaml,
+ []
+
+
+Overfull \hbox (160.0328pt too wide) in paragraph at lines 243--245
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/safe_zone.yaml,
+ []
+
+
+Overfull \hbox (208.63155pt too wide) in paragraph at lines 245--247
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/square_root_controller.yaml,
+ []
+
+
+Overfull \hbox (142.42pt too wide) in paragraph at lines 247--249
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/topics.yaml,
+ []
+
+
+Overfull \hbox (155.3345pt too wide) in paragraph at lines 249--251
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/trajectory.yaml,
+ []
+
+
+Overfull \hbox (154.15582pt too wide) in paragraph at lines 251--253
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/resource/waypoint.yaml,
+ []
+
+
+Overfull \hbox (129.6132pt too wide) in paragraph at lines 253--255
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/scripts/gazebo.py,
+ []
+
+
+Overfull \hbox (115.0962pt too wide) in paragraph at lines 255--257
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/scripts/plot.py,
+ []
+
+
+Overfull \hbox (179.976pt too wide) in paragraph at lines 257--259
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/library/base_controller.cpp,
+ []
+
+
+Overfull \hbox (154.01166pt too wide) in paragraph at lines 259--261
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/library/waypoint.cpp,
+ []
+
+
+Overfull \hbox (205.63475pt too wide) in paragraph at lines 261--263
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/citc_controller_angles.cpp,
+ []
+
+
+Overfull \hbox (196.13087pt too wide) in paragraph at lines 263--265
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/citc_controller_angles.h,
+ []
+
+
+Overfull \hbox (197.25575pt too wide) in paragraph at lines 265--267
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/citc_controller_twist.cpp,
+ []
+
+
+Overfull \hbox (187.75188pt too wide) in paragraph at lines 267--269
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/citc_controller_twist.h,
+ []
+
+
+Overfull \hbox (166.54845pt too wide) in paragraph at lines 269--271
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/data_to_csv.cpp,
+ []
+
+
+Overfull \hbox (157.04457pt too wide) in paragraph at lines 271--273
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/data_to_csv.h,
+ []
+
+
+Overfull \hbox (204.14073pt too wide) in paragraph at lines 273--275
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/pid_controller_angles.cpp,
+ []
+
+
+Overfull \hbox (194.63686pt too wide) in paragraph at lines 275--277
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/pid_controller_angles.h,
+ []
+
+
+Overfull \hbox (195.76173pt too wide) in paragraph at lines 277--279
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/pid_controller_twist.cpp,
+ []
+
+
+Overfull \hbox (186.25786pt too wide) in paragraph at lines 279--281
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/pid_controller_twist.h,
+ []
+
+
+Overfull \hbox (208.18134pt too wide) in paragraph at lines 281--283
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/proportional_controller.cpp,
+ []
+
+
+Overfull \hbox (198.67746pt too wide) in paragraph at lines 283--285
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/proportional_controller.h,
+ []
+
+
+Overfull \hbox (158.6646pt too wide) in paragraph at lines 285--287
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/sinusoidal.cpp,
+ []
+
+
+Overfull \hbox (149.16072pt too wide) in paragraph at lines 287--289
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/sinusoidal.h,
+ []
+
+
+Overfull \hbox (208.32549pt too wide) in paragraph at lines 289--291
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/square_root_controller.cpp,
+ []
+
+
+Overfull \hbox (198.82161pt too wide) in paragraph at lines 291--293
+[]\T1/phv/m/n/10 C:/Users/franc/Desktop/Ubuntu/bebop_controller/src/bebop_contr
+oller/src/nodes/square_root_controller.h,
+ []
+
+[145] [146] [147] [148] [149] [150] [151
+
+]) (refman.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: F68187C47307AA7AFCA7E4248F4AAD7F;130343.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21650 strings out of 479334
+ 432952 string characters out of 2857085
+ 812296 words of memory out of 3000000
+ 34921 multiletter control sequences out of 15000+200000
+ 465686 words of font info for 104 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 112i,16n,117p,1276b,637s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr7.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/franc/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/franc/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/franc/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/franc/AppData
+/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/franc/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/franc/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/franc
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/f
+ranc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/User
+s/franc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (167 pages, 2267704 bytes).
+PDF statistics:
+ 11466 PDF objects out of 12825 (max. 8388607)
+ 3583 named destinations out of 4296 (max. 500000)
+ 4300 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,15 +1,7 @@
-#include "bebop_controller/common.h"
+/// @file base_controller.h
+/// @brief Header file for the base class of controllers.
 
-/*
-#include <boost/bind.hpp>
-#include <stdio.h>
-#include <ros/callback_queue.h>
-#include <nav_msgs/Odometry.h>
-#include <ros/ros.h>
-#include <ros/ros.h>
-#include <mav_msgs/default_topics.h>
-#include <ros/console.h> 
-*/
+#include "bebop_controller/common.h"
 
 #define DISABLE_COMMANDS true
 #define BEBOP_COMMAND_TRAJECTORY "/bebop/command/trajectory"
@@ -31,6 +23,7 @@
 
 namespace bebop_controller {
 
+    /// Controllers base class
     class BaseController{
         public:
             BaseController();

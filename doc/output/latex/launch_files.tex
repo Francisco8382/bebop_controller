@@ -1,0 +1,33 @@
+The {\itshape launch} folder contains files that are used to run one or more ROS nodes.
+
+In this folder we can find the following files.
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{citc__controller__angles_8launch}{citc\+\_\+controller\+\_\+angles.\+launch}}
+\item \mbox{\hyperlink{citc__controller__twist_8launch}{citc\+\_\+controller\+\_\+twist.\+launch}}
+\item \mbox{\hyperlink{gazebo_8launch}{gazebo.\+launch}}
+\item \mbox{\hyperlink{pid__controller__angles_8launch}{pid\+\_\+controller\+\_\+angles.\+launch}}
+\item \mbox{\hyperlink{pid__controller__twist_8launch}{pid\+\_\+controller\+\_\+twist.\+launch}}
+\item \mbox{\hyperlink{proportional__controller_8launch}{proportional\+\_\+controller.\+launch}}
+\item \mbox{\hyperlink{square__root__controller_8launch}{square\+\_\+root\+\_\+controller.\+launch}}
+\item \mbox{\hyperlink{vrpn__client__ros_8launch}{vrpn\+\_\+client\+\_\+ros.\+launch}}
+\end{DoxyItemize}
+
+Some parameters can be modified directly from these files, but most parameters are modified from YAML files. These parameters are explained in this \mbox{\hyperlink{yaml_files}{section}}.
+
+To run these files, the following command is run in the terminal.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{roslaunch bebop\_controller <name\_of\_the\_file>}
+
+\end{DoxyCode}
+
+
+For example, to run the {\itshape \mbox{\hyperlink{vrpn__client__ros_8launch}{vrpn\+\_\+client\+\_\+ros.\+launch}}} file. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{roslaunch bebop\_controller vrpn\_client\_ros.launch}
+
+\end{DoxyCode}
+ 

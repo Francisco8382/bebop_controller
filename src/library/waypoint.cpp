@@ -1,3 +1,6 @@
+/// @file waypoint.cpp
+/// @brief Library file for the base class of the waypoint generator.
+
 #include "bebop_controller/waypoint.h"
 
 namespace bebop_controller {
@@ -17,6 +20,8 @@ namespace bebop_controller {
     
     Waypoint::~Waypoint() {}
 
+    /// Callback to start the trajectory.
+    /// @param event A *ros::TimerEvent* reference.
     void Waypoint::Start_CB(const ros::TimerEvent& event) {
         status = Trajectory;
         std_msgs::Empty empty_;
@@ -27,6 +32,8 @@ namespace bebop_controller {
         Initial_Time = ros::Time::now();
     }
 
+    /// Callback to stop the trajectory.
+    /// @param event A *ros::TimerEvent* reference.
     void Waypoint::Stop_CB(const ros::TimerEvent& event) {
         std_msgs::Empty empty_;
         for (int i = 0; i < 50; i++){
@@ -36,6 +43,8 @@ namespace bebop_controller {
         ros::shutdown();
     }
 
+    /// Callback to calculate and send the current point of the trajectory.
+    /// @param event A *ros::TimerEvent* reference.
     void Waypoint::Trajectory_CB(const ros::TimerEvent& event) {}
 
 }

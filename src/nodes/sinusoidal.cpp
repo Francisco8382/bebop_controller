@@ -1,3 +1,28 @@
+/// @file sinusoidal.cpp
+/// @brief Node file for the sinusoidal waypoint generator.
+/// 
+/// This node requires the following parameters.
+/// @param Waypoint/TimeBeforeTrajectory Time in seconds to let the drone reach the starting position.
+/// @param Waypoint/TrajectoryTime Time in seconds of the trajectory.
+/// @param Waypoint/MarginTime Time margin to let the drone reach the final position before landing.
+/// @param Waypoint/DiffTime Refresh time of the Bebop Controller.
+/// @param Trajectory/X_Initial Initial position in the @f$x@f$ coordinate.
+/// @param Trajectory/Y_Initial Initial position in the @f$y@f$ coordinate.
+/// @param Trajectory/Z_Initial Initial position in the @f$z@f$ coordinate.
+/// @param Trajectory/X_Distance Distance that the trajectory travels in the @f$x@f$ coordinate.
+/// @param Trajectory/Y_Distance Distance that the trajectory travels in the @f$y@f$ coordinate.
+/// @param Trajectory/Z_Distance Distance that the trajectory travels in the @f$z@f$ coordinate.
+/// @param Yaw_Enabled Variable that indicates whether to use or ignore the yaw angle, which faces the front of the trajectory.
+/// @param Yaw_Offset Yaw angle offset in radians.
+/// @param Topics/Command_Trajectory Topic used to send and receive the command trajectory between nodes.
+/// @param Topics/CSV_Begin Topic used to communicate when the trajectory begins and the *data_to_csv* node should start saving the data.
+/// @param Topics/CSV_End Topic used to communicate when the trajectory begins and the *data_to_csv* node should stop saving the data.
+/// 
+/// It is recommended to pass the parameters using the following YAML files.
+/// - waypoint.yaml
+/// - trajectory.yaml
+/// - topics.yaml
+
 #include "sinusoidal.h"
 
 namespace bebop_controller {

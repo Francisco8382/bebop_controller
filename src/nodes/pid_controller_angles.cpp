@@ -1,3 +1,56 @@
+/// @file pid_controller_angles.cpp
+/// @brief Node file for PID Controller using reference angles.
+/// 
+/// This node requires the following parameters.
+/// @param Gains/Px Value of @f$P_x@f$
+/// @param Gains/Py Value of @f$P_y@f$
+/// @param Gains/Pz Value of @f$P_z@f$
+/// @param Gains/Pyaw Value of @f$P_\psi@f$
+/// @param Gains/Dx Value of @f$D_x@f$
+/// @param Gains/Dy Value of @f$D_y@f$
+/// @param Gains/Dz Value of @f$D_z@f$
+/// @param Gains/Dyaw Value of @f$D_\psi@f$
+/// @param Gains/Ix Value of @f$I_x@f$
+/// @param Gains/Iy Value of @f$I_y@f$
+/// @param Gains/Iz Value of @f$I_z@f$
+/// @param Gains/Iyaw Value of @f$I_\psi@f$
+/// @param Limits/Ix Limit of the integral action for the coordinate @f$x@f$.
+/// @param Limits/Iy Limit of the integral action for the coordinate @f$y@f$.
+/// @param Limits/Iz Limit of the integral action for the coordinate @f$z@f$.
+/// @param Limits/Iyaw Limit of the integral action for the yaw angle.
+/// @param Reference_Gains/X Gain for @f$x@f$ coordinate used to consider the reference acceleration of the path.
+/// @param Reference_Gains/Y Gain for @f$y@f$ coordinate used to consider the reference acceleration of the path.
+/// @param Reference_Gains/Z Gain for @f$z@f$ coordinate used to consider the reference acceleration of the path.
+/// @param Lambda/X Variable used to limit control actions. It is not recommended to change.
+/// @param Lambda/Y Variable used to limit control actions. It is not recommended to change.
+/// @param Lambda/Z Variable used to limit control actions. It is not recommended to change.
+/// @param Mass Bebop 2 drone mass.
+/// @param Disable_Commands Variable used to run the controller without sending velocity commands. This can be useful to check if the safe zone is working properly.
+/// @param Topics/Command_Trajectory Topic used to send and receive the command trajectory between nodes.
+/// @param Topics/Pose Topic used to receive the drone position data.
+/// @param Topics/CMD_Vel Topic used to send the velocity commands to the drone.
+/// @param Topics/TafeOff Topic used to send the takeoff command to the drone.
+/// @param Topics/Land Topic used to send the land command to the drone.
+/// @param Topics/CSV_Begin Topic used to communicate when the trajectory begins and the *data_to_csv* node should start saving the data.
+/// @param Topics/CSV_End Topic used to communicate when the trajectory begins and the *data_to_csv* node should stop saving the data.
+/// @param Normalize/Max_Tilt_Angle Maximum tilt angle. Used to normalize roll and pitch angles.
+/// @param Normalize/Max_Vertical_Speed Maximum vertical speed. Used to normalize the control action in the @f$z@f$ coordinate
+/// @param Normalize/Max_Rotation_Speed Maximum rotation speed. Used to normalize the yaw angle control action.
+/// @param Safe_Zone/X Maximum position value allowed in the @f$x@f$ coordinate. If the drone reaches a position that exceeds this value, the drone will land.
+/// @param Safe_Zone/Y Maximum position value allowed in the @f$y@f$ coordinate. If the drone reaches a position that exceeds this value, the drone will land.
+/// @param Safe_Zone/Z Maximum position value allowed in the @f$z@f$ coordinate. If the drone reaches a position that exceeds this value, the drone will land.
+/// @param Max_Speed/X Maximum velocity allowed in @f$x@f$ coordinate.
+/// @param Max_Speed/Y Maximum velocity allowed in @f$x@f$ coordinate.
+/// @param Max_Speed/Z Maximum velocity allowed in @f$x@f$ coordinate.
+/// @param Max_Speed/Yaw Maximum angular velocity allowed for yaw angle.
+/// 
+/// It is recommended to pass the parameters using the following YAML files.
+/// - pid_controller_angles.yaml
+/// - topics.yaml
+/// - normalize_angles.yaml
+/// - safe_zone.yaml
+/// - max_speed.yaml
+
 #include "pid_controller_angles.h"
 
 namespace bebop_controller {

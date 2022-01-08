@@ -1,0 +1,49 @@
+\hypertarget{waypoint_8cpp_source}{}\doxysection{waypoint.\+cpp}
+\label{waypoint_8cpp_source}\index{C:/Users/franc/Desktop/Ubuntu/bebop\_controller/src/bebop\_controller/src/library/waypoint.cpp@{C:/Users/franc/Desktop/Ubuntu/bebop\_controller/src/bebop\_controller/src/library/waypoint.cpp}}
+\mbox{\hyperlink{waypoint_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{waypoint_8h}{bebop\_controller/waypoint.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00006}00006 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacebebop__controller}{bebop\_controller}} \{}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00008}\mbox{\hyperlink{classbebop__controller_1_1_waypoint_a3a885db0b15190f959140caa8b6036d4}{00008}}     \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a3a885db0b15190f959140caa8b6036d4}{Waypoint::Waypoint}}(\mbox{\hyperlink{struct_waypoint_parameters}{WaypointParameters}} param):}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00009}00009     wp\_params\_(param),}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00010}00010     status(\mbox{\hyperlink{waypoint_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba4b59a82e1f6848aae035ecdff0285269}{BeforeTrajectory}}) \{}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00011}00011         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a10dd1bdae86761014972e5a89a859e7a}{setpoint\_pub\_}} = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a5b4445b51ea3ae418adbc7f2aa72b3b6}{nh}}.advertise<trajectory\_msgs::MultiDOFJointTrajectory>(\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_a4bafc4e384685212b4e0701761a9818d}{topic\_command\_trajectory}}, 1);}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00012}00012         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a4b35d30a8060b72c4b4f8a6d7b1b5ac2}{Begin\_}} = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a5b4445b51ea3ae418adbc7f2aa72b3b6}{nh}}.advertise<std\_msgs::Empty>(\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_ae94a7fee43df6f56de8b8ac703100a8f}{topic\_csv\_begin}},1);}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00013}00013         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a6b54d4448b4c069bf0f5dde693721b84}{End\_}} = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a5b4445b51ea3ae418adbc7f2aa72b3b6}{nh}}.advertise<std\_msgs::Empty>(\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_a85eb87af31a6cb4c52e1e5a35b1f67c7}{topic\_csv\_end}},1);}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00015}00015         \textcolor{keywordtype}{double} TotalTime = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_ab79690b0cec2cc84c57bec919c73f4ec}{TimeBeforeTrajectory}} + \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_a0b5c29bb85e066f34f9ba99a8a8cd059}{TrajectoryTime}} + \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_a7aee1e195dd575c83f2cf7a48d1d55b0}{MarginTime}};}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00016}00016         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_aca75de96bfc1ce2b1c66fe37b455223e}{\_timer1}} = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a5244a3392bda3fb8597b77b79f63df6a}{\_n1}}.createTimer(ros::Duration(\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_ac446a590e175f092e0554b1bc35f347d}{DiffTime}}), \&\mbox{\hyperlink{classbebop__controller_1_1_waypoint_a7af0455695e04472adb25dfa886a64a4}{Waypoint::Trajectory\_CB}}, \textcolor{keyword}{this}, \textcolor{keyword}{false}, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00017}00017         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_aaa2f1616dc2f35ad56fc8b0c816025e0}{\_timer2}} = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a2b5e9d76ff15ad43f626d59a4dbf0b55}{\_n2}}.createTimer(ros::Duration(\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab3d23d2ec449e36a2c1970151506adfe}{wp\_params\_}}.\mbox{\hyperlink{struct_waypoint_parameters_ab79690b0cec2cc84c57bec919c73f4ec}{TimeBeforeTrajectory}}), \&\mbox{\hyperlink{classbebop__controller_1_1_waypoint_a4cb902675eb4eabac33c77f49d66c7f9}{Waypoint::Start\_CB}}, \textcolor{keyword}{this}, \textcolor{keyword}{true}, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00018}00018         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab5ca2388853da4b1f13ddb3a409de956}{\_timer3}} = \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a2296152f66987bf802ee12b3daf7151f}{\_n3}}.createTimer(ros::Duration(TotalTime), \&\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab096c1a5cd64b1c900beff45c7d922ff}{Waypoint::Stop\_CB}}, \textcolor{keyword}{this}, \textcolor{keyword}{false}, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00019}00019     \}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00020}00020     }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00021}\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ad5c86ff45be3cc0da04d95e963196956}{00021}}     \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ad5c86ff45be3cc0da04d95e963196956}{Waypoint::\string~Waypoint}}() \{\}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00023}\mbox{\hyperlink{classbebop__controller_1_1_waypoint_a4cb902675eb4eabac33c77f49d66c7f9}{00023}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a4cb902675eb4eabac33c77f49d66c7f9}{Waypoint::Start\_CB}}(\textcolor{keyword}{const} ros::TimerEvent\& event) \{}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00024}00024         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ac8419e8be1991f14915018f4954f8f98}{status}} = \mbox{\hyperlink{waypoint_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba79792cc5b90f5bdecea3fd7b4f7eb9f3}{Trajectory}};}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00025}00025         std\_msgs::Empty empty\_;}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00026}00026         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 50; i++)\{}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00027}00027             \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a4b35d30a8060b72c4b4f8a6d7b1b5ac2}{Begin\_}}.publish(empty\_);}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00028}00028             std::this\_thread::sleep\_for(std::chrono::microseconds(100));}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00029}00029         \}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00030}00030         \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a831f7562febea05336ac214e902d39db}{Initial\_Time}} = ros::Time::now();}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00033}\mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab096c1a5cd64b1c900beff45c7d922ff}{00033}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbebop__controller_1_1_waypoint_ab096c1a5cd64b1c900beff45c7d922ff}{Waypoint::Stop\_CB}}(\textcolor{keyword}{const} ros::TimerEvent\& event) \{}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00034}00034         std\_msgs::Empty empty\_;}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00035}00035         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 50; i++)\{}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00036}00036             \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a6b54d4448b4c069bf0f5dde693721b84}{End\_}}.publish(empty\_);}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00037}00037             std::this\_thread::sleep\_for(std::chrono::microseconds(100));}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00038}00038         \}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00039}00039         ros::shutdown();}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00042}\mbox{\hyperlink{classbebop__controller_1_1_waypoint_a7af0455695e04472adb25dfa886a64a4}{00042}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbebop__controller_1_1_waypoint_a7af0455695e04472adb25dfa886a64a4}{Waypoint::Trajectory\_CB}}(\textcolor{keyword}{const} ros::TimerEvent\& event) \{\}}
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{waypoint_8cpp_source_l00044}00044 \}}
+
+\end{DoxyCode}

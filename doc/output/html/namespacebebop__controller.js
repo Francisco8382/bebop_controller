@@ -1,0 +1,25 @@
+var namespacebebop__controller =
+[
+    [ "BaseController", "classbebop__controller_1_1_base_controller.html", "classbebop__controller_1_1_base_controller" ],
+    [ "CITCController", "classbebop__controller_1_1_c_i_t_c_controller.html", "classbebop__controller_1_1_c_i_t_c_controller" ],
+    [ "Command_Velocities", "structbebop__controller_1_1_command___velocities.html", "structbebop__controller_1_1_command___velocities" ],
+    [ "DataToCSV", "classbebop__controller_1_1_data_to_c_s_v.html", "classbebop__controller_1_1_data_to_c_s_v" ],
+    [ "DataToCSVParameters", "structbebop__controller_1_1_data_to_c_s_v_parameters.html", "structbebop__controller_1_1_data_to_c_s_v_parameters" ],
+    [ "Normalize", "structbebop__controller_1_1_normalize.html", "structbebop__controller_1_1_normalize" ],
+    [ "PIDController", "classbebop__controller_1_1_p_i_d_controller.html", "classbebop__controller_1_1_p_i_d_controller" ],
+    [ "ProportionalController", "classbebop__controller_1_1_proportional_controller.html", "classbebop__controller_1_1_proportional_controller" ],
+    [ "Sinusoidal", "classbebop__controller_1_1_sinusoidal.html", "classbebop__controller_1_1_sinusoidal" ],
+    [ "SquareRootController", "classbebop__controller_1_1_square_root_controller.html", "classbebop__controller_1_1_square_root_controller" ],
+    [ "State", "structbebop__controller_1_1_state.html", "structbebop__controller_1_1_state" ],
+    [ "Vector3", "structbebop__controller_1_1_vector3.html", "structbebop__controller_1_1_vector3" ],
+    [ "Vector4", "structbebop__controller_1_1_vector4.html", "structbebop__controller_1_1_vector4" ],
+    [ "Waypoint", "classbebop__controller_1_1_waypoint.html", "classbebop__controller_1_1_waypoint" ],
+    [ "bound", "namespacebebop__controller.html#a971a2afd690038f281d1678e325bea7b", null ],
+    [ "clamp", "namespacebebop__controller.html#adbb5ce519c9ccec2a03354540b0d30fe", null ],
+    [ "GetRosParameter", "namespacebebop__controller.html#a32600fdf0c17428368f53f564a490449", null ],
+    [ "max", "namespacebebop__controller.html#a23441b7672b09d003134d29016c2d08c", null ],
+    [ "Quat2RPY", "namespacebebop__controller.html#af431db38e54db7a430d047a030b8d48c", null ],
+    [ "RPY2Quat", "namespacebebop__controller.html#a177c1158f55cd1bd2c910f03a1570ca3", null ],
+    [ "sgn", "namespacebebop__controller.html#a88cbefc0f54d177f511384d3ee96d985", null ],
+    [ "yawFromQuaternion", "namespacebebop__controller.html#ae0a297ca0ff90948ea8191a733107ddb", null ]
+];

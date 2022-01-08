@@ -1,3 +1,6 @@
+/// @file pid_controller_angles.h
+/// @brief Header file for PID Controller using reference angles.
+
 #include "bebop_controller/base_controller.h"
 
 #define PxDefaultValue 1.0
@@ -37,12 +40,14 @@
 
 namespace bebop_controller {
 
+    /// Structure for normalization parameters.
     struct Normalize {
         double angle;
         double vertical;
         double rotation;
     };
 
+    /// PID controller class.
     class PIDController : public BaseController {
         public:
             PIDController();

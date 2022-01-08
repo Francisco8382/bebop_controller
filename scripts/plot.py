@@ -10,6 +10,18 @@ matplotlib.use('Agg')
 #import matplotlib.pyplot as plt
 #import sys
 
+## @file plot.py
+## @brief Node file for plotting test results.
+##
+## This node requires the following parameters to run.
+## @param Dir The directory where the CSV files are saved.
+## @param /Subfolder The subfolder where the CSV file is located.
+## @param Topics/CSV_End Topic used to communicate when the trajectory begins and the *data_to_csv* node should stop saving the data.
+## @param YAML Topic used to specify which YAML file corresponds to the running controller and to store the gain values by copying this file.
+## It is recommended to pass the *Topics/CSV_End* parameter using the following YAML file.
+## - topics.yaml
+
+## Graph generator class.
 class Plots:
     def __init__(self, path, topic, yaml):
         self.path = path
@@ -17,6 +29,7 @@ class Plots:
         rospy.Subscriber(topic, Empty, self.Plot)
         rospy.spin() 
 
+    ## Function that generates the graphs of the test results.
     def Plot(self, data):
         data = pd.read_csv(os.path.join(self.path,'data.csv'))
         print(os.path.join(self.path,'data.csv'))

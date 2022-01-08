@@ -5,4 +5,6 @@ Topics: { Command_Trajectory: "/bebop/command/trajectory",
           TakeOff: "/bebop/takeoff",
           Land: "/bebop/land",
           CSV_Begin: "/csv/begin", 
-          CSV_End: "/csv/end"}
+          CSV_End: "/csv/end",
+          Velocities: "/bebop/odom"}
+# /vrpn_client_node/RigidBody1/pose

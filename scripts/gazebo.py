@@ -1,4 +1,12 @@
 #!/usr/bin/env python
+
+## @file gazebo.py
+## @brief Node file to get the drone position data from Gazebo.
+##
+## This node requires the following parameters to run.
+## @param Topic Topic to publish the position data.
+## @param GazeboRealTime Parameter used to compensate the gazebo real time which in most cases differs from the ROS time.
+
 from subprocess import PIPE, Popen
 from threading  import Thread
 import sys
@@ -9,6 +17,7 @@ import rospy
 from geometry_msgs.msg import PoseStamped
 from tf.transformations import quaternion_from_euler
 
+## Class of the publisher that gets the drone position data from the simulator.
 class SphinxPublisher:
     def __init__(self):
         self.q = Queue()
@@ -32,6 +41,7 @@ class SphinxPublisher:
         rospy.Timer(rospy.Duration(Period), self.publish)
         rospy.spin() 
 
+    ## Function that processes the console output and stores it in class variables.
     def process_output(self, out, queue):
         for line in iter(out.readline, b''):
             line = str(line)
@@ -57,6 +67,7 @@ class SphinxPublisher:
             queue.put(line)
         out.close()
 
+    ## Function that publishes the drone position data in a PoseStamped message.
     def publish(self,event):
         try:  
             line = self.q.get_nowait()

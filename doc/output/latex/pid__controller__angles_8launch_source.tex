@@ -1,0 +1,46 @@
+\hypertarget{pid__controller__angles_8launch_source}{}\doxysection{pid\+\_\+controller\+\_\+angles.\+launch}
+\label{pid__controller__angles_8launch_source}\index{C:/Users/franc/Desktop/Ubuntu/bebop\_controller/src/bebop\_controller/launch/pid\_controller\_angles.launch@{C:/Users/franc/Desktop/Ubuntu/bebop\_controller/src/bebop\_controller/launch/pid\_controller\_angles.launch}}
+\mbox{\hyperlink{pid__controller__angles_8launch}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00001}00001 <?xml version="{}1.0"{}?>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00003}00003 <launch>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00004}00004     <arg name="{}Dir"{} default="{}\$(env HOME)/CSV/"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00005}00005     <param name="{}Subfolder"{} type="{}str"{} command="{}date +'\%d-\/\%m-\/\%Y\_\%Ih\%Mm\%Ss'"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00006}00006     <arg name="{}GazeboRealTime"{} default="{}0.5"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00007}00007     <arg name="{}YAML"{} default="{}pid\_controller\_angles.yaml"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00009}00009     <node name="{}gazebo"{} pkg="{}bebop\_controller"{} type="{}gazebo.py"{} output="{}screen"{}>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00010}00010       <param name="{}Topic"{} type="{}str"{} value="{}/bebop/pose"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00011}00011       <param name="{}GazeboRealTime"{} type="{}double"{} value="{}\$(arg GazeboRealTime)"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00012}00012     </node>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00014}00014     <node name="{}pid\_controller\_angles"{} pkg="{}bebop\_controller"{} type="{}pid\_controller\_angles"{} output="{}screen"{}> }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00015}00015       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/pid\_controller\_angles.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00016}00016       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/topics.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00017}00017       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/normalize\_angles.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00018}00018       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/safe\_zone.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00019}00019       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/max\_speed.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00020}00020     </node>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00022}00022     <node name="{}waypoint"{} pkg="{}bebop\_controller"{} type="{}sinusoidal"{} output="{}screen"{}> }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00023}00023       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/topics.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00024}00024       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/waypoint.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00025}00025       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/trajectory.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00026}00026     </node>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00028}00028     <node name="{}data\_to\_csv"{} pkg="{}bebop\_controller"{} type="{}data\_to\_csv"{} output="{}screen"{}> }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00029}00029       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/topics.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00030}00030       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/waypoint.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00031}00031       <param name="{}Dir"{} type="{}str"{} value="{}\$(arg Dir)"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00032}00032     </node>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00034}00034     <node name="{}plot"{} pkg="{}bebop\_controller"{} type="{}plot.py"{} output="{}screen"{}> }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00035}00035       <rosparam command="{}load"{} file="{}\$(find bebop\_controller)/resource/topics.yaml"{} />}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00036}00036       <param name="{}Dir"{} type="{}str"{} value="{}\$(arg Dir)"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00037}00037       <param name="{}YAML"{} type="{}str"{} value="{}\$(arg YAML)"{}/>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00038}00038     </node>}
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{pid__controller__angles_8launch_source_l00040}00040 </launch>}
+
+\end{DoxyCode}

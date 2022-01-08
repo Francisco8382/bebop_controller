@@ -1,3 +1,6 @@
+/// @file citc_controller_twist.h
+/// @brief Header file for CITC Controller using velocity commands.
+
 #include "bebop_controller/base_controller.h"
 
 #define K1xDefaultValue 1.0
@@ -38,12 +41,14 @@
 
 namespace bebop_controller {
 
+    /// Structure for normalization parameters.
     struct Normalize {
         double horizontal;
         double vertical;
         double rotation;
     };
 
+    /// CITC controller class.
     class CITCController : public BaseController {
         public:
             CITCController();

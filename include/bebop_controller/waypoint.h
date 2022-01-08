@@ -1,7 +1,11 @@
+/// @file waypoint.h
+/// @brief Header file for the base class of the waypoint generator.
+
 #include "bebop_controller/common.h"
 #include <thread>
 #include <chrono>
 
+/// Structure for waypoint parameters.
 struct WaypointParameters {
     double TimeBeforeTrajectory;
     double TrajectoryTime;
@@ -12,6 +16,7 @@ struct WaypointParameters {
     std::string topic_csv_end;
 };
 
+/// Trajectory status.
 enum Status {
     BeforeTrajectory,
     Trajectory,
@@ -20,6 +25,7 @@ enum Status {
 
 namespace bebop_controller {
   
+    /// %Waypoint generator base class.
     class Waypoint{
         public:
             Waypoint(WaypointParameters param);

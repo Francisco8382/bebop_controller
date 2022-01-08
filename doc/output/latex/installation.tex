@@ -1,0 +1,34 @@
+The Git\+Hub of the package can be found at this \href{https://github.com/Francisco8382/bebop_controller}{\texttt{ {\bfseries{link}}}}.
+
+In a bash terminal, the following commands are run to create a workspace in which to install the package.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkdir -\/p \string~/bebop\_controller/src}
+\DoxyCodeLine{cd \string~/bebop\_controller}
+\DoxyCodeLine{catkin init}
+
+\end{DoxyCode}
+
+
+Files are cloned from the Git\+Hub using the following commands.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd \string~/bebop\_controller/src}
+\DoxyCodeLine{git clone https://github.com/Francisco8382/bebop\_controller}
+\DoxyCodeLine{git clone https://github.com/ethz-\/asl/mav\_comm}
+
+\end{DoxyCode}
+
+
+Finally, they are compiled by running the following.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd \string~/bebop\_controller}
+\DoxyCodeLine{catkin build}
+\DoxyCodeLine{echo source \string~/bebop\_controller/devel/setup.bash >> \string~/.bashrc}
+
+\end{DoxyCode}
+ 

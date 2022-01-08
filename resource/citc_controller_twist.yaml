@@ -1,4 +1,4 @@
-# Proportional derivative controller parameters
+# CITC controller parameters
 Gains: {K1x: 2.05, 
         K1y: 2.05, 
         K1z: 0.01, 

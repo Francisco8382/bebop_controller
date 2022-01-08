@@ -1,3 +1,6 @@
+/// @file base_controller.cpp
+/// @brief Library file for the base class of controllers.
+
 #include "bebop_controller/base_controller.h"
 
 namespace bebop_controller {
@@ -62,6 +65,8 @@ namespace bebop_controller {
         Stop(true);
     }
 
+    /// @brief Callback to receive a message with the command trajectory from the waypoint generator.
+    /// @param empty_msg A constant pointer to a *trajectory_msgs::MultiDOFJointTrajectory* message.
     void BaseController::MultiDOFJointTrajectory_CB(const trajectory_msgs::MultiDOFJointTrajectoryConstPtr& msg) {
         const size_t n_commands = msg->points.size();
         if (n_commands < 1){
@@ -73,10 +78,14 @@ namespace bebop_controller {
         ROS_INFO_ONCE("Got first MultiDOFJointTrajectory message.");
     }
 
+    /// @brief Callback to stop the drone when the trajectory ends.
+    /// @param empty_msg A constant pointer to a *std_msgs::Empty* message.
     void BaseController::Stop_CB(const std_msgs::Empty::ConstPtr& empty_msg) {
         Stop(false);
     }
 
+    /// @brief Callback to receive the drone pose message. 
+    /// @param pose_msg A reference to a *geometry_msgs::PoseStamped* message.
     void BaseController::Odometry_CB(const geometry_msgs::PoseStamped& pose_msg) {
         ROS_INFO_ONCE("Controller got first pose message.");
         timeOut.stop();
@@ -114,6 +123,8 @@ namespace bebop_controller {
         }
     }
 
+    /// @brief Callback to stop the drone when it has not received pose messages for more than one second.
+    /// @param event A *ros::TimerEvent* reference.
     void BaseController::TimeOut_CB(const ros::TimerEvent& event) {
         if (takeoff){
             ROS_INFO("Pose messages have not been received for one second. Landing the drone.");
@@ -121,6 +132,7 @@ namespace bebop_controller {
         }
     }
 
+    /// @brief Function to takeoff the drone.
     void BaseController::TakeOff() {
         takeoff = true;
         if (disable_commands || stop) {
@@ -130,6 +142,7 @@ namespace bebop_controller {
         takeoff_pub_.publish(empty_msg);
     }
 
+    /// @brief Function to land the drone.
     void BaseController::Land() {
         takeoff = false;
         controller_active_= false;
@@ -140,6 +153,8 @@ namespace bebop_controller {
         land_pub_.publish(empty_msg);
     }
 
+    /// @brief Function to set the odometry of the drone.
+    /// @param odometry A *mav_msgs::EigenOdometry* reference with the odometry data of the drone.
     void BaseController::SetOdometry(mav_msgs::EigenOdometry& odometry) {
         odometry_ = odometry; 
         controller_active_= true;
@@ -149,6 +164,8 @@ namespace bebop_controller {
         Quaternion2Euler(state.orientation.x, state.orientation.y, state.orientation.z);
     }
 
+    /// @brief Function to calculate position and orientation errors.
+    /// @param e A *Vector4* reference where the position errors will be stored.
     void BaseController::GetErrors(Vector4& e) {
         e.x = state.position.x - command_trajectory_.position_W[0];
         e.y = state.position.y - command_trajectory_.position_W[1];
@@ -164,6 +181,8 @@ namespace bebop_controller {
         }
     }
 
+    /// @brief Function to calculate velocity and angular velocity errors.
+    /// @param dot_e A *Vector4* reference where the velocity errors will be stored.
     void BaseController::GetVelocityErrors(Vector4& dot_e) {
         dot_e.x = state.velocity.x - command_trajectory_.velocity_W[0];
         dot_e.y = state.velocity.y - command_trajectory_.velocity_W[1];
@@ -171,6 +190,10 @@ namespace bebop_controller {
         dot_e.yaw = state.angular_velocity.z - command_trajectory_.angular_velocity_W[2];
     }
 
+    /// @brief Function to convert the quaternion into euler angles.
+    /// @param roll A *double* reference to the roll angle.
+    /// @param pitch A *double* reference to the pitch angle.
+    /// @param yaw A *double* reference to the yaw angle.
     void BaseController::Quaternion2Euler(double& roll, double& pitch, double& yaw) const {
         tf::Quaternion q(odometry_.orientation_W_B.z(), odometry_.orientation_W_B.x(), 
                         odometry_.orientation_W_B.y(), odometry_.orientation_W_B.w());
@@ -178,6 +201,8 @@ namespace bebop_controller {
         m.getRPY(roll, pitch, yaw);
     }
 
+    /// @brief Function to calculate the command velocities.
+    /// @param ref_command_signals A reference to a *geometry_mgs/Twist* message.
     void BaseController::CalculateCommandVelocities(geometry_msgs::Twist& ref_command_signals) {
         ref_command_signals.linear.x = 0.0;
         ref_command_signals.linear.y = 0.0;
@@ -185,6 +210,7 @@ namespace bebop_controller {
         ref_command_signals.angular.z = 0.0;
     }
 
+    /// @brief Function to estimate the drone velocity.
     void BaseController::EstimateVelocity() {
         state.velocity.x = (state.position.x - last_state.position.x)/diff;
         state.velocity.y = (state.position.y - last_state.position.y)/diff;
@@ -196,6 +222,7 @@ namespace bebop_controller {
         last_state.orientation = state.orientation;
     }
 
+    /// @brief Function to estimate the drone acceleration.
     void BaseController::EstimateAcceleration() {
         state.acceleration.x = (state.velocity.x - last_state.velocity.x)/diff;
         state.acceleration.y = (state.velocity.y - last_state.velocity.y)/diff;
@@ -207,6 +234,8 @@ namespace bebop_controller {
         last_state.angular_velocity = state.angular_velocity;
     }
 
+    /// @brief Function to stop the drone.
+    /// @param failsafe To indicate if the drone stops because failsafe mode was activated.
     void BaseController::Stop(bool failsafe) {
         if (failsafe) {
             ROS_INFO_ONCE("Failsafe mode");
@@ -221,12 +250,17 @@ namespace bebop_controller {
         Land();
     }
 
+    /// @brief Function to check if the drone is within the safe zone.
+    /// @return True if the drone is within the safe zone. False if not.
     bool BaseController::CheckSafeZone() {
         return (std::abs(state.position.x) < safe_zone.x)
             && (std::abs(state.position.y) < safe_zone.y)
             && (std::abs(state.position.z) < safe_zone.z);
     }
 
+    /// @brief Function to calculate the leash length.
+    /// @param e A *Vector4* reference to the errors.
+    /// @param P A *Vector4* reference to the proportional gains.
     void BaseController::CalculateLeashLength(Vector4& e, Vector4& P) {
         Vector3 Ppos, vel, accel;
         Ppos.x = P.x*sqrt(std::abs(e.x));
@@ -239,6 +273,7 @@ namespace bebop_controller {
         leash_length.y = accel.y/(2*pow(Ppos.y,2)) + pow(vel.y,2)/(2*accel.y);
     }
 
+    /// @brief Function to limit the position errors.
     void BaseController::LimitPositionErrors(Vector4& e) {
         e.x = clamp(e.x,leash_length.x);
         e.y = clamp(e.y,leash_length.y);

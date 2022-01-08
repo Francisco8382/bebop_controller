@@ -1,3 +1,6 @@
+/// @file proportional_controller.h
+/// @brief Header file for proportional controller.
+
 #include "bebop_controller/base_controller.h"
 
 #define PxDefaultValue 1.0
@@ -16,12 +19,14 @@
 
 namespace bebop_controller {
 
+    /// Structure for normalization parameters.
     struct Normalize {
         double horizontal;
         double vertical;
         double rotation;
     };
 
+    /// Proportional controller class.
     class ProportionalController : public BaseController {
         public:
             ProportionalController();
